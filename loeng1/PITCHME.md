@@ -134,6 +134,7 @@ Minu nimi: Ago Luberg
 ## Gomoku
 
 @ul[ul-80]
+
 - Vastased erineva tasemega:
  - nõrgema vastase võitmine 50p
  - tugevama vastase võitmine 50p
@@ -141,6 +142,7 @@ Minu nimi: Ago Luberg
 - Turniirilt saab lisapunkte
 - Gomokut saab teha kahekesi
 - Märksõnad: rekursioon, *game tree*, *minimax*, *alpha-beta pruning*.
+
 @ulend
 
 ---
