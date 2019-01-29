@@ -227,6 +227,17 @@ Minu nimi: Ago Luberg
 
 ---
 
+## Eksamieeldus
+
+@ul
+- 200p ülesannete jms eest
+- Tunnikontroll 1p
+- Kontrolltöö 10p
+- Projekt sooritatud (punktisumma pole oluline)
+@ulend
+
+---
+
 ## Teemad (1-8 nädal)
 
 Umbkaudne teemade nimekiri:
