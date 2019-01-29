@@ -135,10 +135,12 @@ public class HelloWorld {
 @snapend
 
 @snap[west span-50]
+@ul[](false)
 - Java lähtekood kompileeritakse Jaba baitkoodiks
 - Java baitkood käivitatakse JVM-s (Java Virtal Machine)
 - JVM on implementeeritud erinevate operatsioonisüsteemide jaoks
   - sama baitkoodi saab jookustada erinevate platvormide peal
+@ulend
 @snapend
 
 @snap[east span-50]
