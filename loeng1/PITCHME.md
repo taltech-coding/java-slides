@@ -133,7 +133,7 @@ Minu nimi: Ago Luberg
 
 ## Gomoku
 
-@ul[ul-80]
+@ul[many-items]
 
 - Vastased erineva tasemega:
  - nõrgema vastase võitmine 50p
