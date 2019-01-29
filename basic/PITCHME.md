@@ -130,12 +130,12 @@ public class HelloWorld {
 
 ---
 
-@snap[north]
+@snap[north span-100]
 ## Koodi kompileerimine
 @snapend
 
 @snap[west span-50]
-@ul[](false)
+@ul[ul-80](false)
 - Java lähtekood kompileeritakse Jaba baitkoodiks
 - Java baitkood käivitatakse JVM-s (Java Virtal Machine)
 - JVM on implementeeritud erinevate operatsioonisüsteemide jaoks
