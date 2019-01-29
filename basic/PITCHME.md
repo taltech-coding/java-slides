@@ -6,7 +6,7 @@ Muutuja, tingimuslause, tsükkel
 
 Ago Luberg
 
-----
+---
 
 Java programm
 ==============
@@ -25,7 +25,7 @@ Java programm
   - programm käivitatakse JVM (Java Virtual Machine) sees
   - JVM käivitab sama kompileeritud programmi sama tulemusega erinevate platvormide (Windows, Linux, Mac) peal
 
-----
+---
 
 Hello world!
 ============
@@ -42,7 +42,7 @@ IntelliJ's:
 - Parem klikk "src" kaustal, **New..** -> **Java Class**
 - Name: ``HelloWorld``, **OK**
 
-----
+---
 
 Hello world!
 ============
@@ -57,7 +57,7 @@ public class HelloWorld {
 
 ```
 
-----
+---
 
 Koodi käivitamine
 =================
@@ -73,7 +73,7 @@ Process finished with exit code 0
 ```
 
 
-----
+---
 
 Programmikoodi osad - klass
 ===========================
@@ -90,7 +90,7 @@ public class Hello {
 }
 ```
 
-----
+---
 
 Programmikoodi osad - *main* meetod
 ===================================
@@ -105,7 +105,7 @@ public static void main(String[] args) {
 
 ```
 
-----
+---
 
 Programmikoodi osad - kokku
 ===================================
@@ -121,7 +121,7 @@ public class HelloWorld {
 }
 ```
 
-----
+---
 
 *main* meetod
 ===============
@@ -135,7 +135,7 @@ public class HelloWorld {
 - ``()`` - sulgudes on parameetrid, mida antud meetod nõuab
 - ``String[] args`` - ``main`` meetodile antakse automaatselt kaasa käsurealt tulevad argumendid. Konkreetsemalt on tegemist sõnede massiiviga, mis on kättesaadav muutuja ``args`` kaudu.
 
-----
+---
 
 Koodi kompileerimine
 =====================
@@ -151,7 +151,7 @@ Koodi kompileerimine
 @css[image-caption](http://math.hws.edu/javanotes/c1/s3.html)
 
 
-----
+---
 
 Baitkoodi käivitamine
 =====================
@@ -160,7 +160,7 @@ Baitkoodi käivitamine
 
 @css[image-caption](https://dzone.com/articles/jvm-architecture-explained)
 
-----
+---
 
 Kommentaar
 ==========
@@ -183,7 +183,7 @@ Kommentaar
     a = 1; // comment here
 ```
 
-----
+---
 
 Programmi struktuur
 ====================
@@ -202,7 +202,7 @@ public class ClassName {
 }
 ```
 
-----
+---
 
 Muutuja
 =======
@@ -216,7 +216,7 @@ rate = 0.07;
 interest = rate * principal;
 ```
 
-----
+---
 
 Andmetüüp
 ==========
@@ -229,33 +229,33 @@ Andmetüüp
   - primitiivsed - hoiavad vaid ühte väärtust
   - objektid - väärtuste kogum, mis sisaldab primitiive ja teisi objekte
 
-----
+---
 
 Primitiivne andmetüüp
 ======================
 
-+-----------+---------------+-----------------------------------------+--------------------------------------------------------+
++---------+------------+-------------------------------+------------------------------------------+
 | Data Type | Default Value | Min value                               | Max value                                              |
 +===========+===============+=========================================+========================================================+
 | byte      | 0             | -128                                    | 127                                                    |
-+-----------+---------------+-----------------------------------------+--------------------------------------------------------+
++---------+------------+-------------------------------+------------------------------------------+
 | short     | 0             | -32768                                  | 32767                                                  |
-+-----------+---------------+-----------------------------------------+--------------------------------------------------------+
++---------+------------+-------------------------------+------------------------------------------+
 | int       | 0             | -2\ :sup:`-31`                          | 2\ :sup:`31`-1                                         |
-+-----------+---------------+-----------------------------------------+--------------------------------------------------------+
++---------+------------+-------------------------------+------------------------------------------+
 | long      | 0L            | -2\ :sup:`63`  või 0 (alates Java SE 8) | 2\ :sup:`63`   või  2\ :sup:`64`-1  (alates Java SE 8) |
-+-----------+---------------+-----------------------------------------+--------------------------------------------------------+
++---------+------------+-------------------------------+------------------------------------------+
 | float     | 0.0f          | 64-bit                                  | 64-bit                                                 |
-+-----------+---------------+-----------------------------------------+--------------------------------------------------------+
++---------+------------+-------------------------------+------------------------------------------+
 | double    | 0.0d          | 64-bit                                  | 64-bit                                                 |
-+-----------+---------------+-----------------------------------------+--------------------------------------------------------+
++---------+------------+-------------------------------+------------------------------------------+
 | char      | "\\u0000"     | \\u0000 või 0                           | \\uffff või 65535                                      |
-+-----------+---------------+-----------------------------------------+--------------------------------------------------------+
++---------+------------+-------------------------------+------------------------------------------+
 | boolean   | false         | puudub                                  | puudub                                                 |
-+-----------+---------------+-----------------------------------------+--------------------------------------------------------+
++---------+------------+-------------------------------+------------------------------------------+
 
 
-----
+---
 
 Muutuja andmetüübiga
 ====================
@@ -282,7 +282,7 @@ char space = ' ';
     int i, j = 42;
 ```
 
-----
+---
 
 Muutuja nimetamine
 ==================
@@ -298,7 +298,7 @@ Java konventsioon:
 - Konstandid kirjutatakse läbiva suurtähega (``PI``, ``SPEED``)
 - sõnad eraldatakse alakriipsuga (``SPEED_OF_LIGHT``, ``NUMBER_OF_GEARS``)
 
-----
+---
 
 Muutuja deklareerimine
 ======================
@@ -327,7 +327,7 @@ Muutuja tuleb deklareerida enne kasutamist
 }
 ```
 
-----
+---
 
 Tehete järjekord
 =================
@@ -344,7 +344,7 @@ Tehete järjekord
 - ``||`` - loogiline VÕI
 - ``=, +=, -=, *=, /=, %=`` - omistamine
 
-----
+---
 
 Operaatorid
 ===========
@@ -365,7 +365,7 @@ Operaatorid
 
   - ``x = x + y``
 
-----
+---
 
 Operaatorid
 ===========
@@ -389,7 +389,7 @@ Operaatorid
   - ``22 % 5 => 2`` (``22 / 5 => 4``, üle jääb ``2``)
   - ``5 % 5 => 0``
 
-----
+---
 
 Tüübiteisendus (*Casting*)
 ==========================
@@ -411,7 +411,7 @@ Näiteks:
     (int)5.5 / 3;     // 5 / 3 => 1
 ```
 
-----
+---
 
 Koodiplokk
 ===========
@@ -441,7 +441,7 @@ Näiteks:
 }
 ```
 
-----
+---
 
 Muutuja skoop
 =============
@@ -467,7 +467,7 @@ Muutuja on kättesaadav sisemises plokis:
 }
 ```
 
-----
+---
 
 Tingimuslause
 =============
@@ -488,7 +488,7 @@ else
     // statement2
 ```
 
-----
+---
 
 Tingimuslause plokiga
 =====================
@@ -512,7 +512,7 @@ if (boolean-expression) {
 
 ```
 
-----
+---
 
 *if-else* ahel
 ==============
@@ -533,7 +533,7 @@ if (boolean-expression-1) {
 ```
 
 
-----
+---
 
 Tingimusavaldis
 ================
@@ -555,7 +555,7 @@ Tingimusavaldis
   - ``if (4 > 2 || true && false)``
   - ``if (!(2 > 2 + 1) && !(4 == 3 || 2 <= 2))``
 
-----
+---
 
 Tingimuslause näide
 ===================
@@ -570,7 +570,7 @@ if (temperature <= 10) {
 }
 ```
 
-----
+---
 
 Segane ``if-else``
 ===================
@@ -585,7 +585,7 @@ else
 
 Soovitus: **kasuta alati plokke!**
 
-----
+---
 
 Segane ``if-else`` parandatud
 ==============================
@@ -602,7 +602,7 @@ if (x > 0) {
 }
 ```
 
-----
+---
 
 ``switch``
 ==========
@@ -625,4 +625,4 @@ switch (expression) {
 }
 ```
 
-----
+---
