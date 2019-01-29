@@ -119,7 +119,7 @@ Minu nimi: Ago Luberg
 
 ## Gomoku
 
-@ul
+@ul[ul-80]
 - Kahe mängija mäng, kus käiakse nuppe kordamööda lauale
 - Võidab see, kes suudab esimesena 5 oma nuppu kõrvuti (reas, veerus, diagonaalis) saada
 - Teile antakse valmis GUI
@@ -133,7 +133,7 @@ Minu nimi: Ago Luberg
 
 ## Gomoku
 
-@ul[many-items]
+@ul[ul-80]
 
 - Vastased erineva tasemega:
  - nõrgema vastase võitmine 50p
