@@ -192,7 +192,7 @@ Minu nimi: Ago Luberg
 
 ## Ülesannete tähtajad
 
-@ul
+@ul[ul-80]
 - PR ülesanne praktikumi päeva (kolmapäev) õhtul 23:59.
 - EX ülesanne järgmise nädala teisipäeval 23:59.
  - pärast saab kuni 50% järgmise teisipäeva õhtuni 23:59
@@ -290,7 +290,7 @@ Introduction to Java Programming (Brief version) (Daniel Liang)
 
 ## Enne esimest praktikumi
 
-@ul
+@ul[ul-90]
 - **Registreeruge** ained.ttu.ee lehel ainesse
 - Installige arvutisse **JDK** (Java Development Kit)
  - https://jdk.java.net/11/ (sobib ka versioon 8 või hilisem)
