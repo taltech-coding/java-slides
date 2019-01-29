@@ -64,7 +64,7 @@ public class HelloWorld {
 - All paneelil on näha väljund, peaks olema umbes selline:
 
 ```
-"C:\Program Files\Java\jdk1.8.0_40\bin\java" ....
+"C:\Program Files\Java\jdk-11.0.2\bin\java.exe" ....
 Hello World!
 Process finished with exit code 0
 ```
@@ -104,8 +104,8 @@ public static void main(String[] args) {
 
 ## Programmikoodi osad - kokku
 
-- Esialgu te ei pea väga täpselt aru saama, mida kogu järgnev definitsioon teeb
-- Võtke aluseks, et järgmine kood on minimaalne, et saaks oma programmi käima panna
+- Esialgu te ei pea väga täpselt aru saama, mida kogu järgnev kood teeb
+- Võtke aluseks, et järgnev kood on minimaalne, et saaks programmi käima panna
 
 ```java
 public class HelloWorld {
@@ -119,29 +119,31 @@ public class HelloWorld {
 
 ## *main* meetod
 
-``main`` meetodi definitsioonis:
+-``main`` meetodi definitsioonis:
 
-- ``public`` - tegemist on avaliku meetodiga (kättesaadav kõikidele)
-- ``static`` - staatiline meetod (vastupidiselt objekti/instantsi meetodile)
-- ``void`` - meetod ei tagasta midagi
-- ``main`` - meetodi nimi
-- ``()`` - sulgudes on parameetrid, mida antud meetod nõuab
-- ``String[] args`` - ``main`` meetodile antakse automaatselt kaasa käsurealt tulevad argumendid. Konkreetsemalt on tegemist sõnede massiiviga, mis on kättesaadav muutuja ``args`` kaudu.
+ - ``public`` - tegemist on avaliku meetodiga (kättesaadav kõikidele)
+ - ``static`` - staatiline meetod (vastupidiselt objekti/instantsi meetodile)
+ - ``void`` - meetod ei tagasta midagi
+ - ``main`` - meetodi nimi
+ - ``()`` - sulgudes on parameetrid, mida antud meetod nõuab
+ - ``String[] args`` - ``main`` meetodile antakse automaatselt kaasa käsurealt tulevad argumendid. Konkreetsemalt on tegemist sõnede massiiviga, mis on kättesaadav muutuja ``args`` kaudu.
 
 ---
 
 ## Koodi kompileerimine
 
+@snap[west]
 - Java lähtekood kompileeritakse Jaba baitkoodiks
 - Java baitkood käivitatakse JVM-s (Java Virtal Machine)
 - JVM on implementeeritud erinevate operatsioonisüsteemide jaoks
-
   - sama baitkoodi saab jookustada erinevate platvormide peal
+@snapend
 
+@snap[east]
 ![Compiler](basic/java_compiler.png)
 
 @css[image-caption](http://math.hws.edu/javanotes/c1/s3.html)
-
+@snapend
 
 ---
 
