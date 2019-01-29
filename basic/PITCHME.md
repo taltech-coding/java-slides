@@ -1,6 +1,6 @@
 
-Programmeerimise põhikursus (ITI0202)
-=====================================
+## Programmeerimise põhikursus (ITI0202)
+
 
 Muutuja, tingimuslause, tsükkel
 
@@ -8,8 +8,8 @@ Ago Luberg
 
 ---
 
-Java programm
-==============
+## Java programm
+
 
 - Programm kirjutatakse faili, mille laiend on java, nt ``Hello.java``
 - Failis on alati vähemalt üks klass
@@ -27,8 +27,7 @@ Java programm
 
 ---
 
-Hello world!
-============
+## Hello world!
 
 IntelliJ's:
 
@@ -44,8 +43,7 @@ IntelliJ's:
 
 ---
 
-Hello world!
-============
+## Hello world!
 
 ```java
 
@@ -59,8 +57,7 @@ public class HelloWorld {
 
 ---
 
-Koodi käivitamine
-=================
+## Koodi käivitamine
 
 - **Run** -> **Run..** -> **HelloWorld**
 - või parem klikk koodiaknal **Run..**
@@ -75,8 +72,7 @@ Process finished with exit code 0
 
 ---
 
-Programmikoodi osad - klass
-===========================
+## Programmikoodi osad - klass
 
 - Java kood on alati klassi sees
 - Reeglina on ühes failis üks klass
@@ -92,8 +88,7 @@ public class Hello {
 
 ---
 
-Programmikoodi osad - *main* meetod
-===================================
+## Programmikoodi osad - *main* meetod
 
 - Kui java-fail käivitada, otsitakse üles ``main`` meetod
 - ``main`` meetod kirjeldatakse järgnevalt:
@@ -107,8 +102,7 @@ public static void main(String[] args) {
 
 ---
 
-Programmikoodi osad - kokku
-===================================
+## Programmikoodi osad - kokku
 
 - Esialgu te ei pea väga täpselt aru saama, mida kogu järgnev definitsioon teeb
 - Võtke aluseks, et järgmine kood on minimaalne, et saaks oma programmi käima panna
@@ -123,8 +117,7 @@ public class HelloWorld {
 
 ---
 
-*main* meetod
-===============
+## *main* meetod
 
 ``main`` meetodi definitsioonis:
 
@@ -137,8 +130,7 @@ public class HelloWorld {
 
 ---
 
-Koodi kompileerimine
-=====================
+## Koodi kompileerimine
 
 - Java lähtekood kompileeritakse Jaba baitkoodiks
 - Java baitkood käivitatakse JVM-s (Java Virtal Machine)
@@ -153,8 +145,7 @@ Koodi kompileerimine
 
 ---
 
-Baitkoodi käivitamine
-=====================
+## Baitkoodi käivitamine
 
 ![Architecture](basic/jvm_architecture.png)
 
@@ -162,8 +153,7 @@ Baitkoodi käivitamine
 
 ---
 
-Kommentaar
-==========
+## Kommentaar
 
 - Kommentaar on osa koodist, mida kompilaator ignoreerib
 - Kommentaar mitmel real `/*` ja `*/` vahel:
@@ -185,8 +175,7 @@ Kommentaar
 
 ---
 
-Programmi struktuur
-====================
+## Programmi struktuur
 
 Eelnevalt vaatasime ``HelloWorld`` klassi näidet
 
@@ -204,8 +193,7 @@ public class ClassName {
 
 ---
 
-Muutuja
-=======
+## Muutuja
 
 - Muutuja abil saab arvu mällu kirjutada ja sealt lugeda andmeid
 - Muutuja nimetamine Javas: ``camelCase``, ``hellowWorld``, ``interestRate``, ``speed``.
@@ -218,8 +206,7 @@ interest = rate * principal;
 
 ---
 
-Andmetüüp
-==========
+## Andmetüüp
 
 - Javas on igal muutujal kindel andmetüüp
 - Muutuja andmetüüpi ei saa muuta
@@ -231,8 +218,7 @@ Andmetüüp
 
 ---
 
-Primitiivne andmetüüp
-======================
+## Primitiivne andmetüüp
 
 +---------+------------+-------------------------------+------------------------------------------+
 | Data Type | Default Value | Min value                               | Max value                                              |
@@ -257,8 +243,7 @@ Primitiivne andmetüüp
 
 ---
 
-Muutuja andmetüübiga
-====================
+## Muutuja andmetüübiga
 
 - `type-name variable-name;`
 
@@ -284,8 +269,7 @@ char space = ' ';
 
 ---
 
-Muutuja nimetamine
-==================
+## Muutuja nimetamine
 
 Java konventsioon:
 
@@ -300,8 +284,7 @@ Java konventsioon:
 
 ---
 
-Muutuja deklareerimine
-======================
+## Muutuja deklareerimine
 
 Muutuja tuleb deklareerida enne kasutamist
 
@@ -329,8 +312,7 @@ Muutuja tuleb deklareerida enne kasutamist
 
 ---
 
-Tehete järjekord
-=================
+## Tehete järjekord
 
 - ``exp++, exp--`` - *postfix*
 - ``++exp, --exp, +exp, -exp, !``
@@ -346,8 +328,7 @@ Tehete järjekord
 
 ---
 
-Operaatorid
-===========
+## Operaatorid
 
 - Suurendamine/vähendamine
 
@@ -367,8 +348,7 @@ Operaatorid
 
 ---
 
-Operaatorid
-===========
+## Operaatorid
 
 - Jagamine
 
@@ -391,8 +371,7 @@ Operaatorid
 
 ---
 
-Tüübiteisendus (*Casting*)
-==========================
+## Tüübiteisendus (*Casting*)
 
 - Selleks, et kasutada väärtust teise andmetüübina, saab kasutada *cast*'imist
 - Saan näiteks kasutada juhul, kui täisarvudega on vaja täpset tulemust
@@ -413,8 +392,7 @@ Näiteks:
 
 ---
 
-Koodiplokk
-===========
+## Koodiplokk
 
 Koodiplokk grupeerib mitu käsklust üheks plokiks.
 
@@ -443,8 +421,7 @@ Näiteks:
 
 ---
 
-Muutuja skoop
-=============
+## Muutuja skoop
 
 Muutuja kehtib alates selle deklareerimisest kuni ploki lõpuni.
 
@@ -469,8 +446,7 @@ Muutuja on kättesaadav sisemises plokis:
 
 ---
 
-Tingimuslause
-=============
+## Tingimuslause
 
 Korraldus käivitatakse, kui tingimus on tõene:
 
@@ -490,8 +466,7 @@ else
 
 ---
 
-Tingimuslause plokiga
-=====================
+## Tingimuslause plokiga
 
 Korraldused käivitatakse, kui tingimus on tõene:
 
@@ -514,8 +489,7 @@ if (boolean-expression) {
 
 ---
 
-*if-else* ahel
-==============
+## *if-else* ahel
 
 - Mitme tingimuse puhul võib kasutada ``if-else`` ahelat
 - **Ainult üks** ahela lüli (korralduste plokk) käivitatakse
@@ -535,8 +509,7 @@ if (boolean-expression-1) {
 
 ---
 
-Tingimusavaldis
-================
+## Tingimusavaldis
 
 - Tingimusavaldis annab tulemuseks kas ``true`` või ``false``
 - Näiteks:
@@ -557,8 +530,7 @@ Tingimusavaldis
 
 ---
 
-Tingimuslause näide
-===================
+## Tingimuslause näide
 
 ```java
 if (temperature <= 10) {
@@ -572,8 +544,7 @@ if (temperature <= 10) {
 
 ---
 
-Segane ``if-else``
-===================
+## Segane ``if-else``
 
 ```java
 if (x > 0)
@@ -587,8 +558,7 @@ Soovitus: **kasuta alati plokke!**
 
 ---
 
-Segane ``if-else`` parandatud
-==============================
+## Segane ``if-else`` parandatud
 
 Kasutame plokke:
 
@@ -604,8 +574,7 @@ if (x > 0) {
 
 ---
 
-``switch``
-==========
+## ``switch``
 
 ``switch`` konstruktsiooni saab kasutada diskreetsete väärtuste puhul
 ```
