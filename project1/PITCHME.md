@@ -189,7 +189,7 @@ Paaris nädalatel toimub projekti praktikum.
 ## Järgmised sammud: projekt gitlabis
 
 @ul
-- Loo projekt `iti0202-gui`
+- Loo projekt `iti0202-2019-gui`
 - Lisa paarilisele ligipääs (Settings -> Members -> lisa paariline, `Developer` roll)
 - Siia alla lisage projektiplaan README.md failina
 @ulend
@@ -226,3 +226,4 @@ Paaris nädalatel toimub projekti praktikum.
 
 ---
 
+# Gitlab demo
