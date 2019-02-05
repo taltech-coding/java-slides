@@ -149,7 +149,7 @@ Paaris nädalatel toimub projekti praktikum.
 
 ## Normaalne funktsoinaalsus (55p)
 
-@ul[ul-80]
+@ul[ul-70]
 - Kõik mis 40p puhul
 - MVC või mõne analoogse mustri kasutamine. Rakenduse loogika ja presentatsiooni (UI) kiht peaks mingil kujul olema eraldatud
 - Ühiktestid (mitte UI osale). See eeldab, et eelnev punkt on realiseeritud - rakenduse loogika, mida peaks testima, on eraldatud UI-st.
@@ -162,7 +162,7 @@ Paaris nädalatel toimub projekti praktikum.
 
 ## Suurepärane tase (75p)
 
-@ul
+@ul[ul-80]
 - See tähendab, et tuleks midagi keerukamat juurde lisada, näiteks:
  - Välise teenuse liidestamine (näiteks Facebook vms sotsiaalvõrgustik).
  - Multiplayer mäng (kahel erineval seadmel saab mängida)
@@ -196,9 +196,9 @@ Paaris nädalatel toimub projekti praktikum.
 
 ---
 
-## Järgmised sammud: projektiplaan
+## projektiplaan
 
-@ul
+@ul[ul-80]
 - Järgmiseks praktikumiks (2 nädala pärast) koosta projektiplaan
 - Peaks sisaldama vähemalt järgmisi osi:
  - lühike rakenduse kirjeldus
