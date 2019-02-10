@@ -34,7 +34,7 @@ Ago Luberg
     public static boolean lessThan(double x, double y)
 ```
 
-- Eelnev defineerib meetodi (ehk funktsiooni) ``lessThan``, mis tagastab tõeväärtuse (``boolean``).
+- Eelnev defineerib meetodi (ehk funktsiooni) `lessThan`, mis tagastab tõeväärtuse (`boolean`).
 
 
 ---
@@ -43,7 +43,7 @@ Ago Luberg
 
 
 - Funktsioon peab tagastama seda tüüpi andmeid, nagu on funktsiooni definitsioonis märgitud
-- Tagastamiseks kasutatakse ``return`` korraldust
+- Tagastamiseks kasutatakse `return` korraldust
 
 - Näiteks:
 
@@ -73,10 +73,10 @@ Ago Luberg
     }
 ```
 
-- Täpselt üks ``return`` lausetest käivitub funktsiooni käivitumise puhul
-- ``return`` võib esineda kusiganes funktsioonis
+- Täpselt üks `return` lausetest käivitub funktsiooni käivitumise puhul
+- `return` võib esineda kusiganes funktsioonis
 
-  - pärast ``return`` käivitumist funktsiooni töö lõpetatakse
+  - pärast `return` käivitumist funktsiooni töö lõpetatakse
 
 ---
 
@@ -104,16 +104,16 @@ Ago Luberg
 
 - JavaDoc koosneb:
 
-  - Algab ``/**``
-  - Iga järgine rida algab ``*`` (tärniga)
+  - Algab `/**`
+  - Iga järgmine rida algab `*` (tärniga)
   - Esimene lause on lühike kirjeldus.
   - Sellele võib järgneda pikem kirjeldus (võib olla mitu peatükki).
-  - Parameetrid kirjeldatakse ``@param`` sildiga:
-  - ``@param variable-name description``
-  - Tagastatav väärtus kirjeldatakse eraldi ``@return`` sildiga:
-  - ``@return description``
+  - Parameetrid kirjeldatakse `@param` sildiga:
+   - `@param variable-name description`
+  - Tagastatav väärtus kirjeldatakse eraldi `@return` sildiga:
+   - `@return description`
   - Lisaks mainitule on teisigi märksõnu, mida saab kasutada
-  - Lõppeb ``*/`` eraldi real
+  - Lõppeb `*/` eraldi real
 
 - Täpsem info: http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html
 
