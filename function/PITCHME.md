@@ -20,11 +20,11 @@ Ago Luberg
 
 ## Funktsioonid
 
+@ul
 - Osad meetodid tagastavad mingi väärtuse, neid nimetatakse funktsioonideks.
 - Näiteks matemaatika funktsioonid:
 
 ```java
-
     Math.sqrt(9);
     Math.random();
 ```
@@ -32,12 +32,12 @@ Ago Luberg
 - Meetodit kirjeldades tuleb öelda, mis tüübi andmeid see tagastab:
 
 ```java
-
     public static boolean lessThan(double x, double y)
-
 ```
 
 - Eelnev defineerib meetodi (ehk funktsiooni) ``lessThan``, mis tagastab tõeväärtuse (``boolean``).
+
+@ulend
 
 ---
 
@@ -50,19 +50,16 @@ Ago Luberg
 - Näiteks:
 
 ```java
-
     static double pythagoras(double a, double b) {
         // computes the length of the hypotenuse of a right
         // triangle, the sides of the triangle are a and b
         return Math.sqrt(a * a + b * b);
     }
-
 ```
 
 ---
 
 ## Funktsiooni tagastusväärtus
-
 
 - Näide, kuidas arvutada 3N+1 järjestuse järgmine element.
 
@@ -70,14 +67,12 @@ Ago Luberg
   - kui liige ei jagu kahega, korrutatakse liige 3-ga ja liidetakse 1 (tulemuseks on paarisarv)
 
 ```java
-
     static int nextN(int currentN) {
         if (currentN % 2 == 1) // test if current N is odd
             return 3 * currentN + 1; // if so, return this value
         else
             return currentN / 2; // if not, return this instead
     }
-
 ```
 
 - Täpselt üks ``return`` lausetest käivitub funktsiooni käivitumise puhul
@@ -93,7 +88,6 @@ Ago Luberg
 - Näiteks:
 
 ```java
-
     /**
      * Calculates the length of the hypotenuse for the right triangle
      * with the side lengths a and b.
@@ -137,7 +131,6 @@ Ago Luberg
 - Näiteks:
 
 ```java
-
     static void doTask(int N, double x, boolean test) {
         // statements to perform the task go here
     }
@@ -146,7 +139,6 @@ Ago Luberg
 - Kutsume välja:
 
 ```java
-
     doTask(17, Math.sqrt(z + 1), z >= 10);
 ```
 
@@ -163,7 +155,6 @@ Ago Luberg
 - Näiteks need on erinevad funktsioonid:
 
 ```java
-
     public static double calculatePrice(int count, double pricePerPiece) { }
 
     public static double calculatePrice(int count) { }
@@ -174,7 +165,6 @@ Ago Luberg
 - Aga selline pole lubatud:
 
 ```java
-
     public static int calculatePrice(int count, double pricePerPiece) { }
 ```
 
@@ -185,7 +175,6 @@ Ago Luberg
 - Vastavalt sellele, mida koodis välja kutsutakse, pannakse õige funktsioon käima:
 
 ```java
-
     double price = calculatePrice(10, 1.2); // calls the first one
 
     double price2 = calculatePrice(10); // calls the second one
@@ -200,7 +189,6 @@ Ago Luberg
 - Saab kasutada näiteks vaikeväärtustega parameetrite asemel:
 
 ```java
-
     public static double calculatePrice(int count, double pricePerPiece) {
         return count * pricePerPiece;
     }
