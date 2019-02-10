@@ -9,7 +9,7 @@ Ago Luberg
 
 ---
 
-## Koodi grupeeriine ja korduvkasutamine
+## Koodi grupeerimine ja korduvkasutamine
 
 - Sarnased osad koodis on mõistlik grupeerida, et neid oleks hiljem hea kasutada
 - Selleks kasutatakse funktsioone
@@ -20,8 +20,7 @@ Ago Luberg
 
 ## Funktsioonid
 
-@ul
-- Osad meetodid tagastavad mingi väärtuse, neid nimetatakse funktsioonideks.
+- Osad meetodid tagastavad mingi väärtuse, neid nimetatakse ka funktsioonideks.
 - Näiteks matemaatika funktsioonid:
 
 ```java
@@ -37,7 +36,6 @@ Ago Luberg
 
 - Eelnev defineerib meetodi (ehk funktsiooni) ``lessThan``, mis tagastab tõeväärtuse (``boolean``).
 
-@ulend
 
 ---
 
@@ -63,7 +61,7 @@ Ago Luberg
 
 - Näide, kuidas arvutada 3N+1 järjestuse järgmine element.
 
-  - 3N+1 puhul kui liige jagub kahega, jagatakse see kahega ning järgmine liige on saaud jagatis.
+  - 3N+1 puhul kui liige jagub kahega, jagatakse see kahega ning järgmine liige on saadud jagatis.
   - kui liige ei jagu kahega, korrutatakse liige 3-ga ja liidetakse 1 (tulemuseks on paarisarv)
 
 ```java
