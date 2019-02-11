@@ -57,10 +57,9 @@ Ago Luberg
 
 ---
 
-## Funktsiooni tagastusväärtus
+## Tagastusväärtus
 
-- Näide, kuidas arvutada 3N+1 järjestuse järgmine element.
-
+- Arvutame 3N+1 järjestuse järgmise elemendi
   - 3N+1 puhul kui liige jagub kahega, jagatakse see kahega ning järgmine liige on saadud jagatis.
   - kui liige ei jagu kahega, korrutatakse liige 3-ga ja liidetakse 1 (tulemuseks on paarisarv)
 
@@ -72,18 +71,15 @@ Ago Luberg
             return currentN / 2; // if not, return this instead
     }
 ```
-
-- Täpselt üks `return` lausetest käivitub funktsiooni käivitumise puhul
-- `return` võib esineda kusiganes funktsioonis
-
-  - pärast `return` käivitumist funktsiooni töö lõpetatakse
+@[1-6](Täpselt üks `return` saab käivituda)
+@[1-6](`return` võib paikneda kusiganes)
+@[1-6](pärast `return` käivitamist funktsioon lõpetab)
 
 ---
 
-## Funktsiooni (meetodi) dokumenteerimine
+## Dokumenteerimine
 
-- JavaDoc on dokumentatsiooni genereerimise tööriist, millega saab lähtekoodist genereerida "juhendi"
-- Näiteks:
+- JavaDoc on dokumentatsiooni genereerimise tööriist, millega saab lähtekoodist koostada "juhendi"
 
 ```java
     /**
@@ -100,8 +96,9 @@ Ago Luberg
 
 ---
 
-## Funktsiooni (meetodi) dokumenteerimine
+## Dokumenteerimine
 
+@ul[ul-70]
 - JavaDoc koosneb:
 
   - Algab `/**`
@@ -116,7 +113,7 @@ Ago Luberg
   - Lõppeb `*/` eraldi real
 
 - Täpsem info: http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html
-
+@ulend
 
 ---
 
@@ -125,9 +122,6 @@ Ago Luberg
 - Funktsioonil võib olla 0 või rohkem parameetreid
 - Iga parameeter on määratud konkreetse tüübiga
 - Funktsiooni välja kutsudes peab argumendina antud andmetüüp kattuma parameetrites vastaval kohal oleva andmetüübiga.
-
-- Näiteks:
-
 ```java
     static void doTask(int N, double x, boolean test) {
         // statements to perform the task go here
@@ -140,10 +134,9 @@ Ago Luberg
     doTask(17, Math.sqrt(z + 1), z >= 10);
 ```
 
-
 ---
 
-## Funktsiooni ülelaadimine (*overloading*)
+## Ülelaadimine (*overloading*)
 
 - Javas võib klassis mitu samanimelist funktsiooni esineda, kui nende parameetrid on erinevad
 
@@ -154,9 +147,7 @@ Ago Luberg
 
 ```java
     public static double calculatePrice(int count, double pricePerPiece) { }
-
     public static double calculatePrice(int count) { }
-
     public static double calculatePrice(double totalPrice, double discount) { }
 ```
 
@@ -168,7 +159,7 @@ Ago Luberg
 
 ---
 
-## Funktsiooni ülelaadimine (*overloading*)
+## Ülelaadimine (*overloading*)
 
 - Vastavalt sellele, mida koodis välja kutsutakse, pannakse õige funktsioon käima:
 
@@ -179,28 +170,32 @@ Ago Luberg
 
     double price3 = calculatePrice(99.90, 20); // calls the third one
 ```
-
+@[1](Kutsub välja `int, double` parameetritega funktsiooni)
+@[3](Kutsub välja `int` parameetritega funktsiooni)
+@[5](Kutsub välja `double, double` parameetritega funktsiooni)
 ---
 
-## Funktsiooni ülelaadimine (*overloading*)
+## Ülelaadimine (*overloading*)
 
 - Saab kasutada näiteks vaikeväärtustega parameetrite asemel:
 
 ```java
-    public static double calculatePrice(int count, double pricePerPiece) {
-        return count * pricePerPiece;
-    }
+public static double calculatePrice(int count, double pricePerPiece) {
+    return count * pricePerPiece;
+}
 
-    public static double calculatePrice(int count) {
-        // default price = 1.00
-        return calculatePrice(count, 1.00);
-    }
+public static double calculatePrice(int count) {
+    // default price = 1.00
+    return calculatePrice(count, 1.00);
+}
 
-    public static double calculatePrice(double pricePerPiece) {
-        // default count = 1
-        return calculatePrice(1, pricePerPiece);
-    }
+public static double calculatePrice(double pricePerPiece) {
+    // default count = 1
+    return calculatePrice(1, pricePerPiece);
+}
 ```
+@[7,12](Mõlemad abifunktsioonid kutsuvad välja põhifunktsiooni)
+@[7,12](ühel juhul on tüki hind määratud `1.00`, teisel juhul kogus `1`.)
 
 ---
 
