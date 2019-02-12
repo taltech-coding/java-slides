@@ -431,14 +431,15 @@ Ago Luberg
 
 ## Tüübiteisendus (*cast*)
 
-@ul[ul-90](false)
+@ul[ul-80](false)
 - Kui on teada, et ``myVehicle`` on ``Car`` tüüpi, saab kasutada tüübiteisendust (*cast*):
 @ulend
+
 ```java
     (Car) myVehicle
 ```
 
-@ul[ul-90](false)
+@ul[ul-80](false)
 - Selliselt kasutab arvuti ``myVehicle`` objekti nagu see oleks ``Car`` tüüpi
 - **Tüübiteisendusega algne objekt (ja selle tüüp) ei muutu**
 - Näiteks saab teha nii (tüübiteisendus muutujasse):
@@ -449,7 +450,7 @@ Ago Luberg
     System.out.println(myCar.getNumberOfDoors());
 ```
 
-@ul[ul-90](false)
+@ul[ul-80](false)
 - Või kasutada tüübiteisendust jooksvalt:
 @ulend
 
