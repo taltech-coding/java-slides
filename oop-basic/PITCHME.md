@@ -131,6 +131,7 @@ Ago Luberg
 
 ## Null-viit (*null reference*)
 
+@ul[ul-90]
 - Muutuja, mille andmetüüp on mingi klass, ei pruugi viidata objektile
 - Sellisel juhul hoiab muutuja null-viita (*null reference*)
 - Null-viit kirjutatakse Javas **null**
@@ -141,14 +142,17 @@ Ago Luberg
 - Kui muutuja hoiab null-viita, siis ei tohi selle muutuja kaudu pärida muutujaid ega meetodeid
 
  - ``std.getName()`` annab ``NullPointerException`` erindi
+@ulend
 
 ---
 
 ## Objekti näide
 
+@snap[east span-50]
+![Compiler](basic/java_compiler.png)
+@snapend
 
-.. image:: loeng-oop/string_example.png
-
+@snap[west span-50]
 ```java
     public class Student {
         public String name;  // Student's name.
@@ -158,7 +162,9 @@ Ago Luberg
         }
     }  // end of class Student
 ```
+@endsnap
 
+@snap[north]
 ```java
 
     Student std, std1,      // Declare four variables of
@@ -182,6 +188,7 @@ Ago Luberg
     std.name = "John Smith";  // Set values of some instance variables.
     std1.name = "Mary Jones";
 ```
+@endsnap
 
 - Ärge kasutage ``public`` muutujaid!
 
