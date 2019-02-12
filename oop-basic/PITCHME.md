@@ -156,11 +156,9 @@ Ago Luberg
             return (test1 + test2 + test3) / 3;
         }
     }  // end of class Student
-```
 
-
-```java
-
+    // ...
+    
     Student std, std1,      // Declare four variables of
             std2, std3;     // type Student.
 

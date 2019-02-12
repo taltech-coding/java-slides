@@ -32,3 +32,13 @@
     border-radius: 4px;
     padding: 2px 4px;
 }
+
+.image-string-example {
+    background-color: #ffffff;
+    right: -200px;
+    top: 75%;
+}
+
+.image-string-example img {
+    border: 0;
+}
