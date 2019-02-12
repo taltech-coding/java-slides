@@ -162,7 +162,9 @@ Ago Luberg
         }
     }  // end of class Student
 ```
+@snapend
 
+@snap[west]
 ```java
 
     Student std, std1,      // Declare four variables of
