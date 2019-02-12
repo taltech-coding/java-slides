@@ -13,3 +13,10 @@
 .reveal ul.ul-60 li {
    font-size: 0.6em;
 }
+
+.reveal code:not([class]) {
+    background-color: #fbe5e1;
+    color: #c0341d;
+    border-radius: 4px;
+    padding: 2px 4px;
+}

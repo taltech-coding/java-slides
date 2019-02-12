@@ -146,15 +146,15 @@ Ago Luberg
 - Näiteks need on erinevad funktsioonid:
 
 ```java
-    public static double calculatePrice(int count, double pricePerPiece) { }
-    public static double calculatePrice(int count) { }
-    public static double calculatePrice(double totalPrice, double discount) { }
+public static double calculatePrice(int count, double pricePerPiece) { }
+public static double calculatePrice(int count) { }
+public static double calculatePrice(double totalPrice, double discount) { }
 ```
 
 - Aga selline pole lubatud:
 
 ```java
-    public static int calculatePrice(int count, double pricePerPiece) { }
+public static int calculatePrice(int count, double pricePerPiece) { }
 ```
 
 ---
