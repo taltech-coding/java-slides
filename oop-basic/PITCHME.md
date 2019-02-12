@@ -408,19 +408,23 @@ Ago Luberg
 
 ## Objekt teab oma klassi
 
+@ul[ul-90](false)
 - Objekt teab, et ta on tegelikult ``Car`` tüüpi, mitte ``Vehicle`` tüüpi objekt
 
  - info klassi kohta salvestatakse koos objektiga
 
 - Selleks, et kontrollida, kas objekt kuulub klassi, saab kasutada:
+@ulend
 
 ```java
     if (myCar instanceof Car)
 ```
 
-- Vastupidiselt eelnevale, järgmine kood ei tööta:|br|
-  :red-code:`myCar = myVehicle;` |br|
-  kuna ``myVehicle`` võib viidata ka teist tüüpi sõidukile (nt mootorratas).
+@ul[ul-90](false)
+- Vastupidiselt eelnevale, järgmine kood ei tööta:
+ - @css[red]()`myCar = myVehicle;`)
+ - kuna ``myVehicle`` võib viidata ka teist tüüpi sõidukile (nt mootorratas).
+@ulend
 
 
 ---
