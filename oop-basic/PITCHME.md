@@ -162,9 +162,7 @@ Ago Luberg
         }
     }  // end of class Student
 ```
-@endsnap
 
-@snap[north]
 ```java
 
     Student std, std1,      // Declare four variables of
@@ -188,7 +186,7 @@ Ago Luberg
     std.name = "John Smith";  // Set values of some instance variables.
     std1.name = "Mary Jones";
 ```
-@endsnap
+@snapend
 
 - Ärge kasutage ``public`` muutujaid!
 
