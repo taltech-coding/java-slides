@@ -592,7 +592,7 @@ Ago Luberg
     Shape oneShape;
 ```
 
-@ul[ul-80](false)
+@ul[ul-60](false)
 - ``oneShape`` võib viidata ükskõik millisele ``Shape`` alamtüübile (``Rectangle``, ``Oval``, ``RoundRect``)
 - Programmi käivitamise ajal võib see muutuja erineval ajahetkel viidata erinevt tüüpi objektile
 - Ükskõik milla kutsutakse välja:
@@ -602,7 +602,7 @@ Ago Luberg
     oneShape.redraw();
 ```
 
-@ul[ul-80](false)
+@ul[ul-60](false)
 - siis ``redraw()`` meetod käivitatakse selle objekti juures, millele ``oneShape`` viitab
 - Näiteks käime kõik kujundid ekraanil läbi, ühe tsükli sammu jooksul muutuja ``oneShape`` viitab ühele kujundile ekraanil, millele rakendame ``redraw()`` meetodit
 - Saame öelda, et ``redraw()`` on **polümorfne**
@@ -613,7 +613,7 @@ Ago Luberg
 
 ## Polümorfism => sõnumid
 
-
+@[ul-80]
 - OOP puhul kasutatakse meetodi väljakutse kohta mõnikord väljendit sõnumi saatmine objektile
 - Objekt vastab sõnumile sellega, et käivitab vastava meetodi
 - Käsklus ``oneShape.redraw();`` saadab sõnumi ``oneShape`` objektile
@@ -622,14 +622,15 @@ Ago Luberg
 - Selliselt vaadatuna käivitab arvuti ``oneShape.redraw()`` alati samamoodi: saadab sõnumi
 - Vastus sõnumile sõltub sellest, kes selle vastu võtab
 - Polümorfism tähendab, et **erinevad** objektid võivad **samale sõnumile** reageerida erinevalt
+@ulend
 
 ---
 
 ## Polümorfism: tüüpide lisamine on lihtne
 
-- Kui peame programmi lisama uut tüüpi kujundi (``BeveledRect``), piisab uue klassi kirjutamisest ja ``redraw()`` meetodi kirjeldamisest
+![Shapes new](oop-basic/beveled_rect.png)
 
-.. image:: loeng-oop/beveled_rect.png
+- Kui peame programmi lisama uut tüüpi kujundi (``BeveledRect``), piisab uue klassi kirjutamisest ja ``redraw()`` meetodi kirjeldamisest
 
 - ``oneShape.redraw()`` meetod töötab automaatselt ka uue kujundi korral
 
@@ -637,9 +638,11 @@ Ago Luberg
 
 ## **this** ja **super**
 
+@ul[ul-80](false)
 - Käskluse ``oneShape.redraw();`` puhul saadetakse sõnum ``oneShape`` objektile
 
 - ``Shape`` klassis on ``setColor`` meetod:
+@ulend
 
 ```java
     public void setColor(Color newColor) {
@@ -648,36 +651,44 @@ Ago Luberg
     }
 ```
 
+@ul[ul-80](false)
 - Millisele objektile saadetakse ``redraw()`` sõnum?
 - ``setColor()`` on ise sõnum, mis saadeti mingile objektile
 - vastus on, et ``redraw()`` sõnum saadetakse samale objektile, mis sai ``setColor()`` sõnumi
 - Kui ``setColor()`` kutsutakse välja ristküliku objektil, siis ``redraw()`` kutsutakse välja samal objektil (``Rectangle`` klassis olev ``redraw()`` meetod).
+@ulend
 
 ---
 
 ## **this** ja **super**
 
+@ul[ul-80](false)
 - ``redraw()`` meetod ``setColor()`` meetodis ei pruugi välja kutsuda ``Shape`` klassi ``redraw()`` meetodit
 - ``redraw()`` meetod, mis käivitatakse, võib olla ükskõik millises ``Shape`` alamklassis
 - Javas on kaks spetsiaalset muutujat, mis väärtustatakse, kui mõni meetod on välja kutsutud:
 
  - **this** - objekt, mis sai sõnumi (millel meetod välja kutsuti)
  - **super** - viitab sama objekti ülemklassile
+@ulend
 
 ---
 
 ## **this**
 
+@ul[ul-60](false)
 - Muutuja **this** viitab objektile, mis sai sõnumi
 - Seda on vaja kasutada näiteks siis, kui objekti ennast on vaja anda kaasa teise meetodisse:
 
  - ``Person`` objekti määramine raamatu omanikuks ``Book`` klassis:
+@ulend
 
 ```java
     book.setOwner(this);
 ```
 
+@ul[ul-60](false)
 - Teine kasutuskoht on *setter* meetodites:
+@ulend
 
 ```java
     public void setName(String name) {
@@ -685,11 +696,13 @@ Ago Luberg
     }
 ```
 
+@ul[ul-60](false)
 - ``name`` viitab kohalikule muutujale (deklareeritud meetodi sees)
 
  - see peidab ära objekti muutuja ``name`` (mis on sama nimega)
 
 - ``this.name`` viitab sõnumi saanud objekti muutujale
+@ulend
 
 ---
 
