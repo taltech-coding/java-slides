@@ -143,8 +143,6 @@ Ago Luberg
   - st kas parameetrite arv on erinev
   - või andmetüübid on erinevad
 
-- Näiteks need on erinevad funktsioonid:
-
 ```java
 public static double calculatePrice(int count, double pricePerPiece) { }
 public static double calculatePrice(int count) { }
