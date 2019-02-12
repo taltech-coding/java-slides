@@ -152,7 +152,6 @@ Ago Luberg
 ![Compiler](basic/java_compiler.png)
 @snapend
 
-@snap[west span-50]
 ```java
     public class Student {
         public String name;  // Student's name.
@@ -162,9 +161,8 @@ Ago Luberg
         }
     }  // end of class Student
 ```
-@snapend
 
-@snap[west]
+
 ```java
 
     Student std, std1,      // Declare four variables of
@@ -188,7 +186,7 @@ Ago Luberg
     std.name = "John Smith";  // Set values of some instance variables.
     std1.name = "Mary Jones";
 ```
-@snapend
+
 
 - Ärge kasutage ``public`` muutujaid!
 
