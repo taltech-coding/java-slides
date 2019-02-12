@@ -181,7 +181,7 @@ Ago Luberg
     std1.name = "Mary Jones";
 ```
 
-- css[red](Ärge kasutage ``public`` muutujaid!)
+- @css[red](Ärge kasutage ``public`` muutujaid!)
 
 @snap[east span-50 image-string-example]
 ![Compiler](oop-basic/string_example.png)

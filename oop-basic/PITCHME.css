@@ -33,12 +33,12 @@
     padding: 2px 4px;
 }
 
-.image-string-example {
+.reveal section .image-string-example {
     background-color: #ffffff;
     right: -200px;
     top: 75%;
 }
 
-.image-string-example img {
+.reveal section .image-string-example img {
     border: 0;
 }
