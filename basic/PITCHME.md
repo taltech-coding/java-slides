@@ -274,12 +274,12 @@ char space = ' ';
 
 ## Muutuja nimetamine
 
-@ul[ul-80]
+@ul[ul-70]
 Java konventsioon:
 
-- muutuja nimi peab olema tähenduslik (``temperature``, ``speed``, mitte :red-code:`a`, :red-code:`b`)
+- muutuja nimi peab olema tähenduslik (``temperature``, ``speed``, mitte @css[red](a), @css[red](b))
 - nimi algab väikese tähega
-- kasuta tervet sõna mitte lühendeid (``temperature`` vs :red-code:`temp`)
+- kasuta tervet sõna mitte lühendeid (``temperature`` vs @[css](temp))
 - kui nimi koosneb ühest sõnast, kasuta vaid väikeseid tähti (``weight``)
 - kui nimi koosneb mitmest sõnast, kirjuta sõnad kokku ja alates teisest sõnast kirjuta sõna esimene täht suurtähega (``playAgain``, ``currentSpeed``)
 
@@ -319,6 +319,7 @@ Muutuja tuleb deklareerida enne kasutamist
 
 ## Tehete järjekord
 
+@ul[ul-80](false)
 - ``exp++, exp--`` - *postfix*
 - ``++exp, --exp, +exp, -exp, !``
 - ``*`` - korrutamine
@@ -330,11 +331,13 @@ Muutuja tuleb deklareerida enne kasutamist
 - ``&&`` - loogiline JA
 - ``||`` - loogiline VÕI
 - ``=, +=, -=, *=, /=, %=`` - omistamine
+@ulend
 
 ---
 
 ## Operaatorid
 
+@ul[ul-80](false)
 - Suurendamine/vähendamine
 
   - `y = x++` (``x`` suurendatakse **peale** omistamist)
@@ -350,6 +353,8 @@ Muutuja tuleb deklareerida enne kasutamist
 - ``x += y``
 
   - ``x = x + y``
+@ulend
+
 
 ---
 
