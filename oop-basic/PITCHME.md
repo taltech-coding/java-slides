@@ -148,10 +148,6 @@ Ago Luberg
 
 ## Objekti näide
 
-@snap[east span-50]
-![Compiler](basic/java_compiler.png)
-@snapend
-
 ```java
     public class Student {
         public String name;  // Student's name.
@@ -187,8 +183,12 @@ Ago Luberg
     std1.name = "Mary Jones";
 ```
 
-
 - Ärge kasutage ``public`` muutujaid!
+
+@snap[east span-50]
+![Compiler](oop-basic/string_example.png)
+@snapend
+
 
 ---
 
