@@ -218,6 +218,7 @@ interest = rate * principal;
 
 ## Andmetüüp
 
+@ul
 - Javas on igal muutujal kindel andmetüüp
 - Muutuja andmetüüpi ei saa muuta
 - Muutujasse saab "salvestada" vaid andmeid määratud andmetüübiga
@@ -225,30 +226,22 @@ interest = rate * principal;
 
   - primitiivsed - hoiavad vaid ühte väärtust
   - objektid - väärtuste kogum, mis sisaldab primitiive ja teisi objekte
+@ulend
 
 ---
 
 ## Primitiivne andmetüüp
 
-+---------+------------+-------------------------------+------------------------------------------+
 | Data Type | Default Value | Min value                               | Max value                                              |
-+===========+===============+=========================================+========================================================+
+| ---- | --- | --- | --- |
 | byte      | 0             | -128                                    | 127                                                    |
-+---------+------------+-------------------------------+------------------------------------------+
 | short     | 0             | -32768                                  | 32767                                                  |
-+---------+------------+-------------------------------+------------------------------------------+
-| int       | 0             | -2\ :sup:`-31`                          | 2\ :sup:`31`-1                                         |
-+---------+------------+-------------------------------+------------------------------------------+
-| long      | 0L            | -2\ :sup:`63`  või 0 (alates Java SE 8) | 2\ :sup:`63`   või  2\ :sup:`64`-1  (alates Java SE 8) |
-+---------+------------+-------------------------------+------------------------------------------+
+| int       | 0             | -2<sup>31</sup>                     | 2<sup>31</sup>`-1                                         |
+| long      | 0L            | -2<sup>63</sup>    | 2<sup>63</sup> - 1  |
 | float     | 0.0f          | 64-bit                                  | 64-bit                                                 |
-+---------+------------+-------------------------------+------------------------------------------+
 | double    | 0.0d          | 64-bit                                  | 64-bit                                                 |
-+---------+------------+-------------------------------+------------------------------------------+
 | char      | "\\u0000"     | \\u0000 või 0                           | \\uffff või 65535                                      |
-+---------+------------+-------------------------------+------------------------------------------+
 | boolean   | false         | puudub                                  | puudub                                                 |
-+---------+------------+-------------------------------+------------------------------------------+
 
 
 ---
@@ -281,6 +274,7 @@ char space = ' ';
 
 ## Muutuja nimetamine
 
+@ul[ul-80]
 Java konventsioon:
 
 - muutuja nimi peab olema tähenduslik (``temperature``, ``speed``, mitte :red-code:`a`, :red-code:`b`)
@@ -291,6 +285,7 @@ Java konventsioon:
 
 - Konstandid kirjutatakse läbiva suurtähega (``PI``, ``SPEED``)
 - sõnad eraldatakse alakriipsuga (``SPEED_OF_LIGHT``, ``NUMBER_OF_GEARS``)
+@ulend
 
 ---
 
