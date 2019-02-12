@@ -268,12 +268,16 @@ Ago Luberg
 
 ## Pärimine (*inheritance*)
 
-![Single inheritance](oop-basic/single_inheritance.png)
+@snap[east]
+![Single inheritance](oop-basic/single_inheritance.jpg)
+@snapend
 
+@ul[ul-80](false)
 - **Alamklass** (*subclass*) on klass, mis pärib struktuuri ja käitumise teiselt klassilt
 - Kui klass ``B`` on alamklass klassile ``A``, siis ``A`` on **ülemklass** (*superclass*) klassile ``B``.
 - Klassi kirjeldust luues saab määrata, kas see klass on mõne teise klassi alamklass
 - Kui klass ``B`` on alamklass klassile ``A``, siis kirjutatakse:
+@ulend
 
 ```java
     public class B extends A {
