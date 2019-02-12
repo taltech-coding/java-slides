@@ -1,0 +1,22 @@
+.reveal ul.ul-90 li {
+   font-size: 0.9em;
+}
+
+.reveal ul.ul-80 li {
+   font-size: 0.8em;
+}
+
+.reveal ul.ul-70 li {
+   font-size: 0.7em;
+}
+
+.reveal ul.ul-60 li {
+   font-size: 0.6em;
+}
+
+.reveal code:not([class]) {
+    background-color: #fbe5e1;
+    color: #c0341d;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
