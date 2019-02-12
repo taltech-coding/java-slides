@@ -42,3 +42,10 @@
 .reveal section .image-string-example img {
     border: 0;
 }
+.special {
+
+}
+
+.reveal section .special + pre {
+    left: -30%;
+}

@@ -148,6 +148,10 @@ Ago Luberg
 
 ## Objekti näide
 
+@ul[special](false)
+- @css[red](Ärge kasutage ``public`` muutujaid!)
+@ulend
+
 ```java
     public class Student {
         public String name;  // Student's name.
@@ -181,7 +185,7 @@ Ago Luberg
     std1.name = "Mary Jones";
 ```
 
-- @css[red](Ärge kasutage ``public`` muutujaid!)
+
 
 @snap[east span-50 image-string-example]
 ![Compiler](oop-basic/string_example.png)
