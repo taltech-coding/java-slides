@@ -30,6 +30,10 @@
    font-size: 0.6em;
 }
 
+.reveal ul.ul-50 li {
+   font-size: 0.5em;
+}
+
 .reveal code:not([class]) {
     background-color: #fbe5e1;
     color: #c0341d;
