@@ -855,18 +855,18 @@ Ago Luberg
 
 ```java
     public class Student {
-        public static final String STUDENT_CODE_PREFIX = "TTU";
+        public static final String STUDENT_CODE_PREFIX = "TALTECH";
         private String name;
         private String code;
 
-        public static String generateCode() {
+        public static String generateCode(String name) {
             // calculate or get code from somewhere
-            return STUDENT_CODE_PREFIX + "_TIIU33";
+            return STUDENT_CODE_PREFIX + "_" + name.toUpperCase();
         }
 
         public Student(String name) {
             this.name = name;
-            code = Student.generateCode();
+            code = Student.generateCode(name);
         }
 
         public String getCode() {
