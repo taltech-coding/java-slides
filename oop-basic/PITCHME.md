@@ -729,7 +729,7 @@ Ago Luberg
 
  - Meetodi eesmärk on kasutaja vajutatud klahvi kuvamine tekstilahtris
 
-- Kui tahame luua alamklassi ``NumberBox``, mis lubab kasutajal sisestada vaid numbreid, saame kirjutada nii:
+- Kui tahame luua alamklassi ``NumberBox``, mis lubab kasutajal sisestada vaid numbreid, saame kirjutada:
 @ulend
 
 ```java
