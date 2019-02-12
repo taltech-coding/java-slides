@@ -188,7 +188,7 @@ Ago Luberg
 
 
 @snap[east span-50 image-string-example]
-![Compiler](oop-basic/string_example.png)
+![String example](oop-basic/string_example.png)
 @snapend
 
 
@@ -196,6 +196,7 @@ Ago Luberg
 
 ## Objektid ja väärtustamine
 
+@ul[ul-80]
 - Kui muutujale antakse väärtuseks muutuja (mingile objektile), siis kopeeritakse ainult viide
 
  - ``std2 = std1``
@@ -209,6 +210,7 @@ Ago Luberg
 
  - viitavad samale mäluaadrssile
  - kui mälu sisu muutub, muutub see kõikide viitade (muutujate) jaoks
+@ulend
 
 ---
 
@@ -224,7 +226,7 @@ Ago Luberg
         System.out.println("Not the same");
     }
 ```
-
+@ul[ul-80]
 - Luuakse kaks objekti (kaks tudengit)
 - Mõlema nimi on Mati, aga nad on erinevad tudengit
 - Võrdlusega ``s1 == s2`` kontrollitakse, kas ``s1`` ja ``s2`` viitavad **samale** tudengile
@@ -234,6 +236,7 @@ Ago Luberg
 - **equals** meetod sõltub objektist
 
  - tudengi puhul võiks kontrollida nime, koodi jms.
+@ulend
 
 ---
 
@@ -255,23 +258,22 @@ Ago Luberg
 
 ## Pärimine (*inheritance*)
 
+@ul
 - OOP tsentraalne idee on võimaldada kirjeldada sarnaseid objekte, mis on mingis osas sarnased (jagavad sarnast struktuuri ja/või käitumist)
 - Sellist sarnasust väljendatakse pärimise abil
 - Pärimine tähendab, et üks klass pärib kas kõik või osa oma struktuurist ja käitumisest mõnelt teiselt klassilt
+@ulend
 
 ---
 
 ## Pärimine (*inheritance*)
 
+![Single inheritance](oop-basic/single_inheritance.png)
+
 - **Alamklass** (*subclass*) on klass, mis pärib struktuuri ja käitumise teiselt klassilt
-
-.. image:: loeng-oop/single_inheritance.jpg
-    :width: 200px
-
 - Kui klass ``B`` on alamklass klassile ``A``, siis ``A`` on **ülemklass** (*superclass*) klassile ``B``.
 - Klassi kirjeldust luues saab määrata, kas see klass on mõne teise klassi alamklass
 - Kui klass ``B`` on alamklass klassile ``A``, siis kirjutatakse:
-
 
 ```java
     public class B extends A {
