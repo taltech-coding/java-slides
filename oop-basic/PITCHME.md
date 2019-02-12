@@ -492,7 +492,7 @@ Ago Luberg
 
 ![Shapes](oop-basic/shapes.png)
 
-@ul[ul-80]
+@ul[ul-60]
 - Näiteks on meil programm, mis tegeleb kujundite joonistamisega ekraanile
 
  - meil on kolme tüüpi kujundeid: ristkülikud, ovaalid ja ümarad ristkülikud
@@ -530,14 +530,16 @@ Ago Luberg
 
 ## Kuidas joonistada kujundit?
 
+@ul
 - Erinevad kujundid joonistatakse erinevalt
 - ``setColor()`` töötab igasuguse kujundi jaoks
 - Kuidas arvuti teab, millist kujundut joonistada, kui ``redraw()`` välja kutsutakse?
 
-Vastus:
+- Vastus:
 
-- Arvuti laseb kujundil **iseennast joonistada**
-- **Iga kujund teab**, kuidas ennast joonistada.
+ - Arvuti laseb kujundil **iseennast joonistada**
+ - **Iga kujund teab**, kuidas ennast joonistada.
+@ulend
 
 ---
 
@@ -570,6 +572,7 @@ Vastus:
 
 ## Ülekirjutamine (*override*)
 
+@ul[ul-80]
 - Alamklass võib ülemklassi meetodi üle kirjutada
 - See tähendab, et alamklassis on kirjeldatud sama nime ja samade parameetritega meetod mis ülemklassis
 - Kui koodis pöördutakse objekti meetodi poole, siis kõigepealt otsitakse meetodit objektiga tüüpi klassist.
@@ -579,7 +582,7 @@ Vastus:
 - Koodis kirjutatakse ``@Override`` annotatsioon meetodi ette
 
  - see pole koodi käivitamise mõttes oluline, aga loetavuse ja jälgitavuse mõttes vajalik
-
+@ulend
 
 ---
 
@@ -589,18 +592,22 @@ Vastus:
     Shape oneShape;
 ```
 
+@ul[ul-80](false)
 - ``oneShape`` võib viidata ükskõik millisele ``Shape`` alamtüübile (``Rectangle``, ``Oval``, ``RoundRect``)
 - Programmi käivitamise ajal võib see muutuja erineval ajahetkel viidata erinevt tüüpi objektile
 - Ükskõik milla kutsutakse välja:
+@ulend
 
 ```java
     oneShape.redraw();
 ```
 
+@ul[ul-80](false)
 - siis ``redraw()`` meetod käivitatakse selle objekti juures, millele ``oneShape`` viitab
 - Näiteks käime kõik kujundid ekraanil läbi, ühe tsükli sammu jooksul muutuja ``oneShape`` viitab ühele kujundile ekraanil, millele rakendame ``redraw()`` meetodit
 - Saame öelda, et ``redraw()`` on **polümorfne**
 - Meetod on polümorfne, kui käivitatav tegevus sõltub objekti tegelikust tüübist
+@ulend
 
 ---
 
