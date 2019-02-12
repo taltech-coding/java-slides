@@ -1,3 +1,7 @@
+.reveal .red {
+    color: #ff0000;
+}
+
 .reveal ul.ul-100 li {
    font-size: 1.0em;
 }

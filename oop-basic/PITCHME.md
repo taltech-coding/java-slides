@@ -88,13 +88,13 @@ Ago Luberg
 
 ## Andmetüüp (klass)
 
-@ul[ul-100]
+@ul[ul-90]
 - Klassi nimi kirjeldab ära andmetüübi
 
  - kui kirjeldada klass ``Student``, siis saab luua vastavat tüüpi muutuja
 
 - **Muutuja deklareerimine ei loo veel objekti**
-- :red:`Javas muutuja ei hoia endas kunagi objekti`
+- @css[red](Javas muutuja ei hoia endas kunagi objekti)
 - Muutuja on **viide** (*reference*) objektile
 - Objektid paiknevad arvuti mälus erinevatel positsioonidel
 - Muutuja hoiab vajalikku infot, et objekt mälust üles leida
@@ -104,20 +104,24 @@ Ago Luberg
 
 ## Objekti loomine
 
+@ul[ul-90](false)
 - Objekti loomiseks kasutatakse operaatorit **new**
 
  - loob objekti
  - tagastab **viida** sellele objektile
 
 - Näiteks loome uue ``Student`` tüüpi objekti:
+@ulend
 
 ```java
     Student s = new Student();
 ```
 
+@ul[ul-90](false)
 - Mällu luuakse uus ``Student`` objekt (sõltumatu teistest objektidest)
 - Muutuja ``s`` viitab sellele objektile
 - Muutuja ``s`` kaudu saab objekti meetodeid kasutada:
+@ulend
 
 ```java
     s.getName();
