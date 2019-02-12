@@ -33,10 +33,12 @@
     padding: 2px 4px;
 }
 
+/* special stuff */
+
 .reveal section .image-string-example {
     background-color: #ffffff;
     right: -200px;
-    top: 75%;
+    top: 62%;
 }
 
 .reveal section .image-string-example img {
