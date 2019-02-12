@@ -12,24 +12,29 @@ Ago Luberg
 
 ## Objektorienteeritud programmeerimine (OOP)
 
+@ul
 - Java on objektorienteeritud programmeerimiskeel (OOP)
 - Objektorienteeritud programmeerimine (OOP) on programmeerimise paradigma, mis kasutab objekte
 - OOP üldiselt lihtsustab suurte süsteemide arendamist
 - Javas igasugune "väike" kood on juba OOP
+@ulend
 
 ---
 
 ## OOP printsiibid
 
+@ul[ul-100]
 - **Kapseldamine** (*encapsulation*). Andmete ja oleku seostamine uueks ühtseks andmeühikuks (objektiks).
 - **Abstraheerimine** (*abstraction*). Implementatsiooni peitmine kasutaja eest, kirjeldatakse vaid vajalik (abstraktne) käitumine.
 - **Pärimine** (*inheritance*). Objektitüübist saab tuletada uusi objektitüüpe (laiendamine). Järglased (alamklass) pärib eellase (ülemkass) omadused (andmed + meetodid).
 - **Polümorfism** (*polymorphism*). Samanimelised meetodid võivad erinevatel objektidel teostuda erinevalt.
+@ulend
 
 ---
 
 ## Klass ja objekt
 
+@ul[ul-80]
 - Klass kui tarkvaramoodul
 
  - valmiskomponent
@@ -40,11 +45,13 @@ Ago Luberg
  - objekt on justkui iseseisev terviklik moodul:
  - millel on **olek** (andmed, mida see objekt sisaldab) ja
  - millele saab **sõnumeid saata** (meetodeid välja kutsuda)
+@ulend
 
 ---
 
 ## Klass ja objekt
 
+@ul[ul-80]
 - **Klass** kirjeldab ära raamistiku
 
  - vorm, šabloon
@@ -57,7 +64,8 @@ Ago Luberg
 
 - Javas reeglina on iga klass eraldi failis
 
- - class ``Car`` on failis ``Car.java``
+ - klass ``Car`` on failis ``Car.java``
+@ulend
 
 ---
 
@@ -80,6 +88,7 @@ Ago Luberg
 
 ## Andmetüüp (klass)
 
+@ul[ul-100]
 - Klassi nimi kirjeldab ära andmetüübi
 
  - kui kirjeldada klass ``Student``, siis saab luua vastavat tüüpi muutuja
@@ -89,6 +98,7 @@ Ago Luberg
 - Muutuja on **viide** (*reference*) objektile
 - Objektid paiknevad arvuti mälus erinevatel positsioonidel
 - Muutuja hoiab vajalikku infot, et objekt mälust üles leida
+@ulend
 
 ---
 
