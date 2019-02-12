@@ -104,7 +104,7 @@ Ago Luberg
 
 ## Objekti loomine
 
-@ul[ul-90](false)
+@ul[ul-90 ulw100](false)
 - Objekti loomiseks kasutatakse operaatorit **new**
 
  - loob objekti
@@ -117,7 +117,7 @@ Ago Luberg
     Student s = new Student();
 ```
 
-@ul[ul-90](false)
+@ul[ul-90 ulw100](false)
 - Mällu luuakse uus ``Student`` objekt (sõltumatu teistest objektidest)
 - Muutuja ``s`` viitab sellele objektile
 - Muutuja ``s`` kaudu saab objekti meetodeid kasutada:

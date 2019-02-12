@@ -2,6 +2,10 @@
     color: #ff0000;
 }
 
+.reveal ul.ulw100 {
+    width: 100%;
+}
+
 .reveal ul.ul-100 li {
    font-size: 1.0em;
 }
