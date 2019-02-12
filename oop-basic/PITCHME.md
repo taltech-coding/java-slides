@@ -17,7 +17,7 @@ Ago Luberg
 - OOP üldiselt lihtsustab suurte süsteemide arendamist
 - Javas igasugune "väike" kood on juba OOP
 
-----
+---
 
 ## OOP printsiibid
 
@@ -26,7 +26,7 @@ Ago Luberg
 - **Pärimine** (*inheritance*). Objektitüübist saab tuletada uusi objektitüüpe (laiendamine). Järglased (alamklass) pärib eellase (ülemkass) omadused (andmed + meetodid).
 - **Polümorfism** (*polymorphism*). Samanimelised meetodid võivad erinevatel objektidel teostuda erinevalt.
 
-----
+---
 
 ## Klass ja objekt
 
@@ -41,7 +41,7 @@ Ago Luberg
  - millel on **olek** (andmed, mida see objekt sisaldab) ja
  - millele saab **sõnumeid saata** (meetodeid välja kutsuda)
 
-----
+---
 
 ## Klass ja objekt
 
@@ -59,7 +59,7 @@ Ago Luberg
 
  - class ``Car`` on failis ``Car.java``
 
-----
+---
 
 ## Klass ja objekt
 
@@ -76,7 +76,7 @@ Ago Luberg
     Student s = new Student();
 ```
 
-----
+---
 
 ## Andmetüüp (klass)
 
@@ -90,7 +90,7 @@ Ago Luberg
 - Objektid paiknevad arvuti mälus erinevatel positsioonidel
 - Muutuja hoiab vajalikku infot, et objekt mälust üles leida
 
-----
+---
 
 ## Objekti loomine
 
@@ -113,7 +113,7 @@ Ago Luberg
     s.getName();
 ```
 
-----
+---
 
 ## Null-viit (*null reference*)
 
@@ -128,7 +128,7 @@ Ago Luberg
 
  - ``std.getName()`` annab ``NullPointerException`` erindi
 
-----
+---
 
 ## Objekti näide
 
@@ -171,7 +171,7 @@ Ago Luberg
 
 - Ärge kasutage ``public`` muutujaid!
 
-----
+---
 
 ## Objektid ja väärtustamine
 
@@ -189,7 +189,7 @@ Ago Luberg
  - viitavad samale mäluaadrssile
  - kui mälu sisu muutub, muutub see kõikide viitade (muutujate) jaoks
 
-----
+---
 
 ## Objekti võrdlemine
 
@@ -214,7 +214,7 @@ Ago Luberg
 
  - tudengi puhul võiks kontrollida nime, koodi jms.
 
-----
+---
 
 ## Sõnede võrdlemine
 
@@ -230,7 +230,7 @@ Ago Luberg
     System.out.println(s1.equals(s2));  // true
 ```
 
-----
+---
 
 ## Pärimine (*inheritance*)
 
@@ -238,7 +238,7 @@ Ago Luberg
 - Sellist sarnasust väljendatakse pärimise abil
 - Pärimine tähendab, et üks klass pärib kas kõik või osa oma struktuurist ja käitumisest mõnelt teiselt klassilt
 
-----
+---
 
 ## Pärimine (*inheritance*)
 
@@ -259,7 +259,7 @@ Ago Luberg
     }
 ```
 
-----
+---
 
 ## Mitu alamklassi
 
@@ -269,7 +269,7 @@ Ago Luberg
 
 .. image:: loeng-oop/multi_inheritance.png
 
-----
+---
 
 ## Näide: sõidukid
 
@@ -288,7 +288,7 @@ Ago Luberg
  - ``Truck`` klassis näiteks ``numberOfAcles`` (telgede arv)
  - ``Motorcycle`` klassis näiteks tõeväärtust ``hasSidecar`` (külgkorviga)
 
-----
+---
 
 ## Koodinäide
 
@@ -323,7 +323,7 @@ Ago Luberg
     }
 ```
 
-----
+---
 
 ## Vehicle objektid
 
@@ -347,7 +347,7 @@ Ago Luberg
     myCar.transferOwnership();
 ```
 
-----
+---
 
 ## Tüübid ja alamtüübid
 
@@ -365,7 +365,7 @@ Ago Luberg
     Vehicle yourVehicle = new Car();
 ```
 
-----
+---
 
 ## Objekt teab oma klassi
 
@@ -384,7 +384,7 @@ Ago Luberg
   kuna ``myVehicle`` võib viidata ka teist tüüpi sõidukile (nt mootorratas).
 
 
-----
+---
 
 ## Tüübiteisendus (*cast*)
 
@@ -409,7 +409,7 @@ Ago Luberg
     System.out.println( ((Car) myVehicle).getNumberOfDoors());
 ```
 
-----
+---
 
 ## Tüübiteisendus ja -kontroll
 
@@ -431,13 +431,13 @@ Ago Luberg
         System.out.println(motorcycle.hasSidecar());
     }
 ```
-----
+---
 
 ## Polümorfism (*polymorphism*)
 
 - Samanimeline meetod võib erinevat tüüpi objektil käituda erinevalt
 
-----
+---
 
 ## Näide: kujundid
 
@@ -456,7 +456,7 @@ Ago Luberg
 
 - Värvi muutmine muudab instantsi muutuja väärtuse ja joonistab kujundi uue värviga.
 
-----
+---
 
 ## Shape koodinäide
 
@@ -475,7 +475,7 @@ Ago Luberg
     }
 ```
 
-----
+---
 
 ## Kuidas joonistada kujundit?
 
@@ -488,7 +488,7 @@ Vastus:
 - Arvuti laseb kujundil **iseennast joonistada**
 - **Iga kujund teab**, kuidas ennast joonistada.
 
-----
+---
 
 ## Igal klassil oma **redraw()**
 
@@ -515,7 +515,7 @@ Vastus:
     }
 ```
 
-----
+---
 
 ## Ülekirjutamine (*override*)
 
@@ -530,7 +530,7 @@ Vastus:
  - see pole koodi käivitamise mõttes oluline, aga loetavuse ja jälgitavuse mõttes vajalik
 
 
-----
+---
 
 ## Polümorfism (*polymorphism*)
 
@@ -551,7 +551,7 @@ Vastus:
 - Saame öelda, et ``redraw()`` on **polümorfne**
 - Meetod on polümorfne, kui käivitatav tegevus sõltub objekti tegelikust tüübist
 
-----
+---
 
 ## Polümorfism => sõnumid
 
@@ -565,7 +565,7 @@ Vastus:
 - Vastus sõnumile sõltub sellest, kes selle vastu võtab
 - Polümorfism tähendab, et **erinevad** objektid võivad **samale sõnumile** reageerida erinevalt
 
-----
+---
 
 ## Polümorfism: tüüpide lisamine on lihtne
 
@@ -575,7 +575,7 @@ Vastus:
 
 - ``oneShape.redraw()`` meetod töötab automaatselt ka uue kujundi korral
 
-----
+---
 
 ## **this** ja **super**
 
@@ -595,7 +595,7 @@ Vastus:
 - vastus on, et ``redraw()`` sõnum saadetakse samale objektile, mis sai ``setColor()`` sõnumi
 - Kui ``setColor()`` kutsutakse välja ristküliku objektil, siis ``redraw()`` kutsutakse välja samal objektil (``Rectangle`` klassis olev ``redraw()`` meetod).
 
-----
+---
 
 ## **this** ja **super**
 
@@ -606,7 +606,7 @@ Vastus:
  - **this** - objekt, mis sai sõnumi (millel meetod välja kutsuti)
  - **super** - viitab sama objekti ülemklassile
 
-----
+---
 
 ## **this**
 
@@ -633,7 +633,7 @@ Vastus:
 
 - ``this.name`` viitab sõnumi saanud objekti muutujale
 
-----
+---
 
 ## **super**
 
@@ -644,7 +644,7 @@ Vastus:
  - ``Shape`` klassi ``redraw()`` meetod on peidetud
  - selleks, et kutsuda välja ülemklassi ``redraw()`` meetodit, saab kasutada: ``super.redraw();``
 
-----
+---
 
 ## **super** näide
 
@@ -672,7 +672,7 @@ Vastus:
 - ``super`` viitab siin ``TextBox`` klassis kirjeldatule.
 - Muul juhul ei tehta midagi, ehk sümbol ekraanile ei ilmu
 
-----
+---
 
 ## Nähtavus
 
@@ -684,7 +684,7 @@ Vastus:
 - *puudub* - ainult paketi sees nähtav
 - **private** - ainult klass näeb
 
-----
+---
 
 ## Millal *private*, *public*?
 
@@ -702,7 +702,7 @@ Vastus:
 - *getter*/*setter* meetodid on üldiselt ``public`` nähtavusega
 
 
-----
+---
 
 ## *getter* / *setter* meetodid
 
@@ -715,7 +715,7 @@ Vastus:
  - näiteks kasutaja ``id`` väärtust hiljem enam muuta ei lubata
  - ehk siis *getter* on olemas, *setter* aga puudub
 
-----
+---
 
 ## *getter* / *setter* näide
 
@@ -738,7 +738,7 @@ Vastus:
     }
 ```
 
-----
+---
 
 ## *getter* / *setter* IntelliJ-s
 
@@ -747,7 +747,7 @@ Vastus:
 - vali ``Getter and Setter``
 - saad valida väljad, mille kohta genereeritakse meetodid
 
-----
+---
 
 ## Staatiline muutuja / meetod
 
@@ -762,7 +762,7 @@ Vastus:
     int a = Math.abs(-12);
 ```
 
-----
+---
 
 ## Staatiline / mittestaatiline näide
 
@@ -796,7 +796,7 @@ Vastus:
     }
 ```
 
-----
+---
 
 ## Konstruktor
 
@@ -807,7 +807,7 @@ Vastus:
 - Mõistlik kasutada oleku algväärtustamiseks
 - Kui konstruktorit ei kirjelda, siis objekti loomisel ei tule argumente kaasa anda
 
-----
+---
 
 ## Konstruktori näide
 
@@ -844,7 +844,7 @@ Vastus:
     Student s = new Student("Mati", 22);
 ```
 
-----
+---
 
 ## Konstruktori ülelaadimine
 
@@ -878,7 +878,7 @@ Vastus:
     }
 ```
 
-----
+---
 
 ## **enum**
 
@@ -903,7 +903,7 @@ Vastus:
     }
 ```
 
-----
+---
 
 ## **enum** lisainfoga
 
@@ -935,6 +935,6 @@ Vastus:
     }
 ```
 
-----
+---
 
 ## Küsimused
