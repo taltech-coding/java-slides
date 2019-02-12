@@ -302,7 +302,7 @@ Ago Luberg
 
 ![Vehicle inheritance](oop-basic/vehicle_inheritance.png)
 
-@ul[ul-80]
+@ul[ul-60]
 - Klass ``Vehicle`` kirjeldab üldise sõiduki
 - Selle abil saab kirjeldada kõiki sõiduki tüüpe
 
@@ -326,7 +326,9 @@ Ago Luberg
         private String registrationNumber;
         private Person owner;
 
-        public String getRegistrationNumber() { return registrationNumber; }
+        public String getRegistrationNumber() { 
+            return registrationNumber; 
+        }
 
         public void setRegistrationNumber(String registrationNumber) {
             this.registrationNumber = registrationNumber;
@@ -334,7 +336,9 @@ Ago Luberg
 
         public Person getOwner() { return owner; }
 
-        public void setOwner(Person owner) { this.owner = owner; }
+        public void setOwner(Person owner) { 
+            this.owner = owner; 
+        }
 
         // all subclasses will have this method
         public void transferOwnership(Person newOwner) {
@@ -346,9 +350,13 @@ Ago Luberg
     public class Car extends Vehicle {
         private int numberOfDoors;
 
-        public int getNumberOfDoors() { return numberOfDoors; }
+        public int getNumberOfDoors() { 
+            return numberOfDoors; 
+        }
 
-        public void setNumberOfDoors(int numberOfDoors) { this.numberOfDoors = numberOfDoors; }
+        public void setNumberOfDoors(int numberOfDoors) { 
+            this.numberOfDoors = numberOfDoors; 
+        }
     }
 ```
 
@@ -380,6 +388,7 @@ Ago Luberg
 
 ## Tüübid ja alamtüübid
 
+@ul[ul-80](false)
 - Pärismaailmas on nii autod, veoautod ja mootorrattad kõik sõidukid
 
  - sama kehtib tegelikult ka programmis
@@ -388,6 +397,7 @@ Ago Luberg
 
 - Muutuja, mis saab viidata objektile **tüübiga A**, saab ühtlasi viidata ka objektile, mille tüüp on **A alamklass**
 - Seega on korrektsed:
+@ulend
 
 ```java
     Vehicle myVehicle = myCar;
