@@ -294,7 +294,7 @@ Ago Luberg
 - Pärimine võib toimuda ka üle mitme "generatsiooni"
 - Joonisel klass ``E`` on alamklass klassile ``D``, ``D`` omakorda on alamklass klassile ``A``.
 
-.. image:: loeng-oop/multi_inheritance.png
+![Multi inheritance](oop-basic/multi_inheritance.png)
 
 ---
 
