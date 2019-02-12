@@ -768,6 +768,7 @@ Ago Luberg
 
 ## Millal *private*, *public*?
 
+@ul[ul-80]
 - Üldine reegel
 
  - Kasuta kõige rangemat (piiratumat) nähtavust.
@@ -780,12 +781,13 @@ Ago Luberg
  - Otse väljade kasutamine (``Student.name``) teeb hilisema funktsionaalsuse muutmise keeruliseks
 
 - *getter*/*setter* meetodid on üldiselt ``public`` nähtavusega
-
+@ulend
 
 ---
 
 ## *getter* / *setter* meetodid
 
+@ul[ul-80]
 - Kasutatakse objekti oleku muutmiseks
 - *getter* võimaldab objekti olekut lugeda
 - *setter* võimaldab objekti olekut muuta
@@ -794,6 +796,7 @@ Ago Luberg
 
  - näiteks kasutaja ``id`` väärtust hiljem enam muuta ei lubata
  - ehk siis *getter* on olemas, *setter* aga puudub
+@ulend
 
 ---
 
@@ -822,21 +825,25 @@ Ago Luberg
 
 ## *getter* / *setter* IntelliJ-s
 
+@ul
 - Kirjelda instantsi muutujad ära
 - ``alt`` + ``insert`` annab menüü
 - vali ``Getter and Setter``
 - saad valida väljad, mille kohta genereeritakse meetodid
+@ulend
 
 ---
 
 ## Staatiline muutuja / meetod
 
+@ul[ul-80](false)
 - (Instantsi) muutuja / meetod on seotud ühe konkreetse isendiga
 - Ühe tudengi (instantsi, objekti) nimi ei ole kuidagi seotud teise tudengi nimega
 - Ühe tudengi meetod ``sleep()`` mõjutab ainult seda tudengit
 - **Staatilised** muutujad ja meetodid ei ole setud objektiga, vaid on seotud **klassiga**
 - Staatilise muutuja väärtus on üle programmi ühine
 - Staatiline meetod kutsutakse välja klass nimega:
+@ulend
 
 ```java
     int a = Math.abs(-12);
@@ -880,31 +887,42 @@ Ago Luberg
 
 ## Konstruktor
 
+@ul[ul-80]
 - Eriline meetod, mis pannakse käima juhul, kui luuakse uus objekt
 - Seda ei pea kirjeldama klassi puhul
 - Meetodil pole tagastustüüpi
 - Nimi on alati sama klassi nimega
 - Mõistlik kasutada oleku algväärtustamiseks
 - Kui konstruktorit ei kirjelda, siis objekti loomisel ei tule argumente kaasa anda
+@ulend
 
 ---
 
 ## Konstruktori näide
 
+@ul[ul-80](false)
 - Kui konstruktorit ei defineeri:
+@ulend
 
 ```java
     public class Student {
     }
 ```
 
+@ul[ul-80](false)
 - Saab kasutada nii:
+@ulend
 
 ```java
     Student s = new Student();
 ```
+---
 
+## Konstruktori näide
+
+@ul[ul-80](false)
 - Konstruktoriga:
+@ulend
 
 ```java
     public class Student {
@@ -918,7 +936,9 @@ Ago Luberg
     }
 ```
 
+@ul[ul-80](false)
 - Saab kasutada nii:
+@ulend
 
 ```java
     Student s = new Student("Mati", 22);
@@ -962,7 +982,9 @@ Ago Luberg
 
 ## **enum**
 
+@ul[ul-80](false)
 - **enum** - eriline klass, mis hoiab vaid konstante
+@ulend
 
 ```java
     public enum Weekday {
@@ -971,11 +993,13 @@ Ago Luberg
     }
 ```
 
+@ul[ul-80](false)
 - Kirjeldatakse näiteks eraldi failis Weekday.java
 
  - võib kasutada ka teise klassi sees
 
 - Kasutamine:
+@ulend
 
 ```java
     if (getWeekday() == Weekday.FRIDAY) {
