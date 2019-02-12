@@ -66,3 +66,7 @@
 .reveal section .image-single-inheritance img {
     border: 0;
 }
+
+img {
+    border: 0;
+}

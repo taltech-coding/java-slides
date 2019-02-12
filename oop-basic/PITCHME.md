@@ -755,13 +755,14 @@ Ago Luberg
 
 ## Nähtavus
 
-.. image:: loeng-oop/visibility.png
-    :width: 900px
+![Visibility](oop-basic/visibility.png)
 
+@ul[ul-80](false)
 - **public** - kõigile nähtav
 - **protected** - paketi sees nähtav, alamklass (ka mujal paketis) näeb
 - *puudub* - ainult paketi sees nähtav
 - **private** - ainult klass näeb
+@ulend
 
 ---
 
