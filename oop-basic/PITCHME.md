@@ -268,11 +268,11 @@ Ago Luberg
 
 ## Pärimine (*inheritance*)
 
-@snap[east]
+@snap[east image-single-inheritance]
 ![Single inheritance](oop-basic/single_inheritance.jpg)
 @snapend
 
-@ul[ul-80](false)
+@ul[ul-80 ulw80](false)
 - **Alamklass** (*subclass*) on klass, mis pärib struktuuri ja käitumise teiselt klassilt
 - Kui klass ``B`` on alamklass klassile ``A``, siis ``A`` on **ülemklass** (*superclass*) klassile ``B``.
 - Klassi kirjeldust luues saab määrata, kas see klass on mõne teise klassi alamklass
