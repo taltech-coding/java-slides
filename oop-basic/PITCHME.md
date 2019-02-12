@@ -613,7 +613,7 @@ Ago Luberg
 
 ## Polümorfism => sõnumid
 
-@[ul-80]
+@ul[ul-80]
 - OOP puhul kasutatakse meetodi väljakutse kohta mõnikord väljendit sõnumi saatmine objektile
 - Objekt vastab sõnumile sellega, et käivitab vastava meetodi
 - Käsklus ``oneShape.redraw();`` saadab sõnumi ``oneShape`` objektile
@@ -630,15 +630,17 @@ Ago Luberg
 
 ![Shapes new](oop-basic/beveled_rect.png)
 
+@ul[ul-60]
 - Kui peame programmi lisama uut tüüpi kujundi (``BeveledRect``), piisab uue klassi kirjutamisest ja ``redraw()`` meetodi kirjeldamisest
 
 - ``oneShape.redraw()`` meetod töötab automaatselt ka uue kujundi korral
+@ulend
 
 ---
 
 ## **this** ja **super**
 
-@ul[ul-80](false)
+@ul[ul-60](false)
 - Käskluse ``oneShape.redraw();`` puhul saadetakse sõnum ``oneShape`` objektile
 
 - ``Shape`` klassis on ``setColor`` meetod:
@@ -651,7 +653,7 @@ Ago Luberg
     }
 ```
 
-@ul[ul-80](false)
+@ul[ul-60](false)
 - Millisele objektile saadetakse ``redraw()`` sõnum?
 - ``setColor()`` on ise sõnum, mis saadeti mingile objektile
 - vastus on, et ``redraw()`` sõnum saadetakse samale objektile, mis sai ``setColor()`` sõnumi
@@ -708,12 +710,14 @@ Ago Luberg
 
 ## **super**
 
+@ul[ul-80]
 - **super** viitab sama objekti (instantsi) **ülemklassile**
 - Kui ülemklassis on sama nimega meetod kui alamklassis (nt ``redraw()``), siis alamklassi tüüpi objekti puhul meetodit välja kutsudes peidetakse ülemklassi meetod ära
 
  - kui ``oneShape`` on ristkülik, siis ``oneShape.redraw()`` kutsub ``Rectangle`` klassi ``redraw()`` meetodit
  - ``Shape`` klassi ``redraw()`` meetod on peidetud
  - selleks, et kutsuda välja ülemklassi ``redraw()`` meetodit, saab kasutada: ``super.redraw();``
+@ulend
 
 ---
 
