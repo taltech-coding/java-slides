@@ -723,12 +723,14 @@ Ago Luberg
 
 ## **super** näide
 
+@ul[ul-60](false)
 - Oletame, et meil on klass ``TextBox``, mis kirjeldab ära tekstilahtri ekraanil, kuhu kasutaja saab teksti sisse kirjutada.
 - Olgu sellel klassil instantsi meetod ``key()``, mis kutsutakse välja iga klahvi vajutuse peale
 
  - Meetodi eesmärk on kasutaja vajutatud klahvi kuvamine tekstilahtris
 
 - Kui tahame luua alamklassi ``NumberBox``, mis lubab kasutajal sisestada vaid numbreid, saame kirjutada nii:
+@ulend
 
 ```java
     public class NumberBox extends TextBox {
@@ -743,9 +745,11 @@ Ago Luberg
     }
 ```
 
+@ul[ul-60](false)
 - Kui sisestatud sümbol on number, kutsutakse välja ``super.key(ch)``, mis kuvab sümboli (numbri) ekraanil.
 - ``super`` viitab siin ``TextBox`` klassis kirjeldatule.
 - Muul juhul ei tehta midagi, ehk sümbol ekraanile ei ilmu
+@ulend
 
 ---
 
