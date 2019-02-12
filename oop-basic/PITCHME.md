@@ -300,10 +300,11 @@ Ago Luberg
 
 ## Näide: sõidukid
 
+![Vehicle inheritance](oop-basic/vehicle_inheritance.png)
+
+@ul[ul-80]
 - Klass ``Vehicle`` kirjeldab üldise sõiduki
 - Selle abil saab kirjeldada kõiki sõiduki tüüpe
-
-.. image:: loeng-oop/vehicle_inheritance.png
 
 - **Ühine** kõikide sõidukite peale:
 
@@ -314,6 +315,7 @@ Ago Luberg
  - ``Car`` klassis näiteks ``numberOfDoors`` (uste arv)
  - ``Truck`` klassis näiteks ``numberOfAcles`` (telgede arv)
  - ``Motorcycle`` klassis näiteks tõeväärtust ``hasSidecar`` (külgkorviga)
+@ulend
 
 ---
 
