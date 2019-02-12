@@ -55,10 +55,10 @@
 .reveal section .special + pre {
     left: -30%;
 }
-.reveal section .image-string-example {
+.reveal section .image-single-inheritance {
     right: -22%;
     z-index: -1000;
 }
-.reveal section .image-string-example img {
+.reveal section .image-single-inheritance img {
     border: 0;
 }
