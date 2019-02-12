@@ -11,6 +11,7 @@ Ago Luberg
 ## Java programm
 
 
+@ul[ul-80]
 - Programm kirjutatakse faili, mille laiend on java, nt ``Hello.java``
 - Failis on alati vähemalt üks klass
 - Faili nimi ja klassi nimi peavad olema samad
@@ -24,6 +25,7 @@ Ago Luberg
 
   - programm käivitatakse JVM (Java Virtual Machine) sees
   - JVM käivitab sama kompileeritud programmi sama tulemusega erinevate platvormide (Windows, Linux, Mac) peal
+@ulend
 
 ---
 
@@ -119,7 +121,8 @@ public class HelloWorld {
 
 ## *main* meetod
 
--``main`` meetodi definitsioonis:
+@ul[ul-80]
+- ``main`` meetodi definitsioonis:
 
  - ``public`` - tegemist on avaliku meetodiga (kättesaadav kõikidele)
  - ``static`` - staatiline meetod (vastupidiselt objekti/instantsi meetodile)
@@ -127,6 +130,7 @@ public class HelloWorld {
  - ``main`` - meetodi nimi
  - ``()`` - sulgudes on parameetrid, mida antud meetod nõuab
  - ``String[] args`` - ``main`` meetodile antakse automaatselt kaasa käsurealt tulevad argumendid. Konkreetsemalt on tegemist sõnede massiiviga, mis on kättesaadav muutuja ``args`` kaudu.
+@ulend
 
 ---
 
@@ -146,7 +150,7 @@ public class HelloWorld {
 @snap[east span-50]
 ![Compiler](basic/java_compiler.png)
 
-@css[image-caption](http://math.hws.edu/javanotes/c1/s3.html)
+@size[10](http://math.hws.edu/javanotes/c1/s3.html)
 @snapend
 
 ---
