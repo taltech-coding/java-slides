@@ -490,12 +490,13 @@ Ago Luberg
 
 ## Näide: kujundid
 
+![Shapes](oop-basic/shapes.png)
+
+@ul[ul-80]
 - Näiteks on meil programm, mis tegeleb kujundite joonistamisega ekraanile
 
  - meil on kolme tüüpi kujundeid: ristkülikud, ovaalid ja ümarad ristkülikud
  - kujundid võivad erinevat värvi olla
-
-.. image:: loeng-oop/shapes.png
 
 - Kujundite jaoks võib kasutada kolme klassi: ``Rectangle``, ``Oval`` ja ``RoundRect``
 - Kolm klassi võiksid omada ühist ülemklassi ``Shape``, mis sisaldaks ühiseid omadusi
@@ -504,6 +505,7 @@ Ago Luberg
  - meetodid väärtuste muutmiseks
 
 - Värvi muutmine muudab instantsi muutuja väärtuse ja joonistab kujundi uue värviga.
+@ulend
 
 ---
 
