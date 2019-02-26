@@ -23,7 +23,7 @@ Ago Luberg
 
 ## OOP printsiibid
 
-@ul[ul-100]
+@ul[ul-90]
 - **Kapseldamine** (*encapsulation*). Andmete ja oleku seostamine uueks ühtseks andmeühikuks (objektiks).
 - **Abstraheerimine** (*abstraction*). Implementatsiooni peitmine kasutaja eest, kirjeldatakse vaid vajalik (abstraktne) käitumine.
 - **Pärimine** (*inheritance*). Objektitüübist saab tuletada uusi objektitüüpe (laiendamine). Järglased (alamklass) pärib eellase (ülemkass) omadused (andmed + meetodid).
@@ -86,6 +86,15 @@ Ago Luberg
 
 ---
 
+## Klass ja objekt
+
+@ul
+- Klassi on see, mille arendaja kirjutab koodi.
+- Objekt on see, mille kood loob kirjutatud klassist.
+@ulend
+
+---
+
 ## Andmetüüp (klass)
 
 @ul[ul-90]
@@ -131,18 +140,24 @@ Ago Luberg
 
 ## Null-viit (*null reference*)
 
-@ul[ul-90]
+@ul[ul-90](false)
 - Muutuja, mille andmetüüp on mingi klass, ei pruugi viidata objektile
 - Sellisel juhul hoiab muutuja null-viita (*null reference*)
 - Null-viit kirjutatakse Javas **null**
-
-- Null-viida saab määrata muutujale: ``Student std = null;``
-- Ja seda saab kontrollida: ``if (std == null)``
-
-- Kui muutuja hoiab null-viita, siis ei tohi selle muutuja kaudu pärida muutujaid ega meetodeid
-
- - ``std.getName()`` annab ``NullPointerException`` erindi
 @ulend
+
+```java
+Student std = null
+if (std == null) {
+    // ...
+}
+String name = std.getName();
+```
+@[1](Null-viida saab määrata muutujasse)
+@[2-4](Null-viita saab kontrollida tingimuslauses)
+@[5](Kui muutuja hoiab null-viita, ei tohi sellel pärida meetodeid/muutujaid)
+@[5](See rida viskab `NullPointerException` erindi.)
+
 
 ---
 
@@ -197,7 +212,7 @@ Ago Luberg
 ## Objektid ja väärtustamine
 
 @ul[ul-80]
-- Kui muutujale antakse väärtuseks muutuja (mingile objektile), siis kopeeritakse ainult viide
+- Kui muutujale antakse väärtuseks muutuja (viide mingile objektile), siis kopeeritakse ainult viide
 
  - ``std2 = std1``
  - ``Student`` objekt, millele ``std1`` viitab, jääb mälus täpselt samasuguseks
@@ -228,7 +243,7 @@ Ago Luberg
 ```
 @ul[ul-80]
 - Luuakse kaks objekti (kaks tudengit)
-- Mõlema nimi on Mati, aga nad on erinevad tudengit
+- Mõlema nimi on Mati, aga nad on erinevad tudengid
 - Võrdlusega ``s1 == s2`` kontrollitakse, kas ``s1`` ja ``s2`` viitavad **samale** tudengile
 
  - **ei võrrelda objekti väärtusi**
@@ -313,7 +328,7 @@ Ago Luberg
 - **Laiendused**: iga alamklass võib lisada selle tüübi spetsiifilisi muutujaid ja meetodeid:
 
  - ``Car`` klassis näiteks ``numberOfDoors`` (uste arv)
- - ``Truck`` klassis näiteks ``numberOfAcles`` (telgede arv)
+ - ``Truck`` klassis näiteks ``numberOfAxles`` (telgede arv)
  - ``Motorcycle`` klassis näiteks tõeväärtust ``hasSidecar`` (külgkorviga)
 @ulend
 
@@ -422,7 +437,7 @@ Ago Luberg
 
 @ul[ul-90](false)
 - Vastupidiselt eelnevale, järgmine kood ei tööta:
- - @css[red]()`myCar = myVehicle;`)
+ - @css[red](`myCar = myVehicle;`)
  - kuna ``myVehicle`` võib viidata ka teist tüüpi sõidukile (nt mootorratas).
 @ulend
 
@@ -575,7 +590,7 @@ Ago Luberg
 @ul[ul-80]
 - Alamklass võib ülemklassi meetodi üle kirjutada
 - See tähendab, et alamklassis on kirjeldatud sama nime ja samade parameetritega meetod mis ülemklassis
-- Kui koodis pöördutakse objekti meetodi poole, siis kõigepealt otsitakse meetodit objektiga tüüpi klassist.
+- Kui koodis pöördutakse objekti meetodi poole, siis kõigepealt otsitakse meetodit objekti tüüpi klassist.
 
  - Kui sealt meetodit ei leita, otsitakse ülemklassist jne
 
@@ -589,25 +604,35 @@ Ago Luberg
 ## Polümorfism (*polymorphism*)
 
 ```java
-    Shape oneShape;
+    Shape shape;
 ```
 
 @ul[ul-60](false)
-- ``oneShape`` võib viidata ükskõik millisele ``Shape`` alamtüübile (``Rectangle``, ``Oval``, ``RoundRect``)
+- ``shape`` võib viidata ükskõik millisele ``Shape`` alamtüübile (``Rectangle``, ``Oval``, ``RoundRect``)
 - Programmi käivitamise ajal võib see muutuja erineval ajahetkel viidata erinevt tüüpi objektile
 - Ükskõik milla kutsutakse välja:
 @ulend
 
 ```java
-    oneShape.redraw();
+    shape.redraw();
 ```
 
 @ul[ul-60](false)
-- siis ``redraw()`` meetod käivitatakse selle objekti juures, millele ``oneShape`` viitab
-- Näiteks käime kõik kujundid ekraanil läbi, ühe tsükli sammu jooksul muutuja ``oneShape`` viitab ühele kujundile ekraanil, millele rakendame ``redraw()`` meetodit
+- siis ``redraw()`` meetod käivitatakse selle objekti juures, millele ``shape`` viitab
+
+---
+
+## Polümorfism (*polymorphism*)
+
+```java
+for (Shape shape : allTheShapes) {
+    shape.redraw();
+}
+```
+
+- Näiteks käime kõik kujundid ekraanil läbi, ühe tsükli sammu jooksul muutuja ``shape`` viitab ühele kujundile ekraanil, millele rakendame ``redraw()`` meetodit
 - Saame öelda, et ``redraw()`` on **polümorfne**
 - Meetod on polümorfne, kui käivitatav tegevus sõltub objekti tegelikust tüübist
-@ulend
 
 ---
 
@@ -616,10 +641,10 @@ Ago Luberg
 @ul[ul-80]
 - OOP puhul kasutatakse meetodi väljakutse kohta mõnikord väljendit sõnumi saatmine objektile
 - Objekt vastab sõnumile sellega, et käivitab vastava meetodi
-- Käsklus ``oneShape.redraw();`` saadab sõnumi ``oneShape`` objektile
+- Käsklus ``shape.redraw();`` saadab sõnumi ``shape`` objektile
 - Objekt ise teab, mis tüüpi ta on, seega ta teab, kuidas sõnumile vastata
 
-- Selliselt vaadatuna käivitab arvuti ``oneShape.redraw()`` alati samamoodi: saadab sõnumi
+- Selliselt vaadatuna käivitab arvuti ``shape.redraw()`` alati samamoodi: saadab sõnumi
 - Vastus sõnumile sõltub sellest, kes selle vastu võtab
 - Polümorfism tähendab, et **erinevad** objektid võivad **samale sõnumile** reageerida erinevalt
 @ulend
@@ -633,7 +658,7 @@ Ago Luberg
 @ul[ul-60]
 - Kui peame programmi lisama uut tüüpi kujundi (``BeveledRect``), piisab uue klassi kirjutamisest ja ``redraw()`` meetodi kirjeldamisest
 
-- ``oneShape.redraw()`` meetod töötab automaatselt ka uue kujundi korral
+- ``shape.redraw()`` meetod töötab automaatselt ka uue kujundi korral
 @ulend
 
 ---
@@ -641,7 +666,7 @@ Ago Luberg
 ## **this** ja **super**
 
 @ul[ul-60](false)
-- Käskluse ``oneShape.redraw();`` puhul saadetakse sõnum ``oneShape`` objektile
+- Käskluse ``shape.redraw();`` puhul saadetakse sõnum ``shape`` objektile
 
 - ``Shape`` klassis on ``setColor`` meetod:
 @ulend
@@ -714,7 +739,7 @@ Ago Luberg
 - **super** viitab sama objekti (instantsi) **ülemklassile**
 - Kui ülemklassis on sama nimega meetod kui alamklassis (nt ``redraw()``), siis alamklassi tüüpi objekti puhul meetodit välja kutsudes peidetakse ülemklassi meetod ära
 
- - kui ``oneShape`` on ristkülik, siis ``oneShape.redraw()`` kutsub ``Rectangle`` klassi ``redraw()`` meetodit
+ - kui ``shape`` on ristkülik, siis ``shape.redraw()`` kutsub ``Rectangle`` klassi ``redraw()`` meetodit
  - ``Shape`` klassi ``redraw()`` meetod on peidetud
  - selleks, et kutsuda välja ülemklassi ``redraw()`` meetodit, saab kasutada: ``super.redraw();``
 @ulend
@@ -736,9 +761,7 @@ Ago Luberg
     public class NumberBox extends TextBox {
         @Override
         public void key(char ch) {
-            // user has entered the character ch
-            // show it only if its a digit (0-9)
-            if (ch >= '0' && ch <= '9') {
+            if (ch >= '0' && ch <= '9') {  // show only 0..9
                 super.key(ch);
             }
         }
@@ -949,31 +972,31 @@ Ago Luberg
 ## Konstruktori ülelaadimine
 
 ```java
-    public static class Student {
-        enum Sex { MALE, FEMALE, UNKNOWN }
+    public class Student {
+        enum Gender { MALE, FEMALE, UNKNOWN }
 
         private String name;
         private int age;
-        private Sex sex;
+        private Gender gender;
 
         public static final int AGE_UNKNOWN = -1;
 
-        public Student(String name, int age, Sex sex) {
+        public Student(String name, int age, Gender gender) {
             this.name = name;
             this.age = age;
-            this.sex = sex;
+            this.gender = gender;
         }
 
         public Student(String name) {
-            this(name, AGE_UNKNOWN, Sex.UNKNOWN);
+            this(name, AGE_UNKNOWN, Gender.UNKNOWN);
         }
 
         public Student(String name, int age) {
-            this(name, age, Sex.UNKNOWN);
+            this(name, age, Gender.UNKNOWN);
         }
 
-        public Student(String name, Sex sex) {
-            this(name, AGE_UNKNOWN, sex);
+        public Student(String name, Gender gender) {
+            this(name, AGE_UNKNOWN, gender);
         }
     }
 ```
@@ -996,7 +1019,7 @@ Ago Luberg
 @ul[ul-80](false)
 - Kirjeldatakse näiteks eraldi failis Weekday.java
 
- - võib kasutada ka teise klassi sees
+ - võib kirjeldada ka teise klassi sees
 
 - Kasutamine:
 @ulend
