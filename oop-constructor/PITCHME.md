@@ -21,8 +21,7 @@ Ago Luberg
 
 ---
 
-Konstruktori käivitusahel
-=========================
+## Käivitusahel
 
 - Kõigepealt käivitatakse ülemklassi konsturktor, seejärel alamklassi konstruktor
 
