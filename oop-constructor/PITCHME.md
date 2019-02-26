@@ -23,7 +23,9 @@ Ago Luberg
 
 ## Käivitusahel
 
-- Kõigepealt käivitatakse ülemklassi konsturktor, seejärel alamklassi konstruktor
+@ul[ul-60](false)
+- Kõigepealt käivitatakse **ülemklassi** konsturktor, seejärel alamklassi konstruktor
+@ulend
 
 ```java
 public class Vehicle {
@@ -44,7 +46,7 @@ public class Main {
 ```
 @[](Sõiduk ja alamklass auto, mõlemal konstruktor print korraldusega)
 @[13](Loome uue `Car` objekti)
-@[1-100](Prinditakse `Vehicle construtor` ja `Car constructor`.)
+@[](Prinditakse `Vehicle construtor` ja `Car constructor`.)
 
 ---
 
