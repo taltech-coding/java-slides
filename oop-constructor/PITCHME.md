@@ -74,16 +74,37 @@ public class Main {
 
 ---
 
+## Vaike-konstruktor (*default constructor*)
+
+- Kui klassis kirjeldatakse ära **ükskõik milline** konstruktor, siis vaike-konstruktorit enam ei ole
+ - vahet pole, kas kirjeldatud konstruktor on parameetritega või parameetriteta
+- Tuleb ettevaatlik olla, kui koodis on kasutatud vaike-konstruktorit, siis uue konstruktori kirjeldamisel osa koodist ei pruugi töötada
+
+```java
+public class Student {
+    public Student(String name) {
+        // ...
+    }
+    
+    public static void main(String[] args) {
+        Student s = new Student();
+    }
+}
+```
+@[7](Kui eelnevalt tühi konstruktor oli olemas (vaike-konstruktor), siis ühe konstruktori kirjeldamisel seda enam ei ole)
+@[](Selline kood ei tööta)
+@[](Üks võimalus on alati lisada ka parameetriteta konstruktor)
+
+---
+
 ## Konstruktori käivitusahel
 
 @ul[ul-60]
 - Konstruktori puhul käivitatakse **kõigepealt ülemasklassi konstruktor**
 
- - kui konstruktoris eraldi ülemklassi konstruktori väljakutset pole,
-   käivitatakse ilma parameetriteta konstruktor
+ - kui konstruktoris eraldi ülemklassi konstruktori väljakutset pole, käivitatakse ilma parameetriteta konstruktor
  - kui ülemklassil selline konstruktor puudub, antakse kompileerimisviga
- - kui klassil ülemklassi pole (st ``Object`` on klassi ülemklass),
-   siis sellist viga ei teki, kuna ``Object`` klassis on parameetriteta konstruktor olemas.
+ - kui klassil ülemklassi pole (st ``Object`` on klassi ülemklass), siis sellist viga ei teki, kuna ``Object`` klassis on parameetriteta konstruktor olemas.
 
 - Ülemklassi konstruktorit saab ise välja kutsuda järgmiselt: ``super()``
 - ``super()`` peab olema esimene rida konstruktoris!
