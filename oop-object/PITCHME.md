@@ -10,7 +10,7 @@ Ago Luberg
 
 ## Baasklass (``Object``)
 
-@ul
+@ul[ul-90]
 - Baasklass
 - Kõik klassid pärinevad sellest klassist
   - seda ei pea erali välja kirjutama (`extends Object`)
@@ -90,7 +90,7 @@ Ago Luberg
         System.out.println(s);  // Juurikas (19 a)
     }
 ```
-@[17](Kui `toString()` on üle kirjutatud, saab kuvada sobivat sõne)
+@[9-12,17](Kui `toString()` on üle kirjutatud, saab kuvada sobivat sõne)
 
 ---
 
@@ -108,7 +108,7 @@ Ago Luberg
 
 ## hashCode() meetod
 
-@ul[ul-90]
+@ul[ul-80]
 - Tagastab objekti räsikoodi (*hash code*)
 - Kasutatakse näiteks ``HashMap`` objekti poolt
 - Kui objektid on võrdsed (``x.equals(y)``), peavad nad tagastama sama koodi (``x.hashCode() == y.hashCode()``)
