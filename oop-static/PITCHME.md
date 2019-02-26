@@ -56,7 +56,7 @@ Ago Luberg
 
 ---
 
-##Näide
+## Näide
 
 ```java
     class Student {
@@ -121,8 +121,7 @@ Ago Luberg
 - Kasutatakse juhul, kui meetod ei pea kasutama konkreetse objekti andmeid
 - *Static factory* meetod - objekti oomine läbi staatilise meetodi
 - Näiteks matemaatika valemid (trigonomeetria, ``abs`` jms ``Math`` klassist)
-- Tihti staatilise meetodi panemine klassi alla on lihtsalt üks viis koodi
-  struktureerimiseks
+- Tihti staatilise meetodi panemine klassi alla on lihtsalt üks viis koodi struktureerimiseks
   - matemaatikaga seonduv ``Math`` klassis
 @ulend
 
@@ -135,8 +134,7 @@ Ago Luberg
 - Staatiline meetod, mille sisu on uue objekti loomine
 - Annab võimaluse teha täiendavat kontrolli enne objekti loomist
 - Konstruktor saab tagastada vaid ühte andmetüüpi objekti
-- *Static factory* meetod võimaldab tagastaa lisaks ka ``null`` ning
-  alamklassi tüüpi objekti
+- *Static factory* meetod võimaldab tagastaa lisaks ka ``null`` ning alamklassi tüüpi objekti
 
  - näiteks ``createVehicle()`` meetod võib tagastada ``Car`` või ``Bus`` vms
 
