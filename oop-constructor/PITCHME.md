@@ -76,7 +76,7 @@ public class Main {
 
 ## Vaike-konstruktor
 
-@ul[ul-70](false)
+@ul[ul-60](false)
 - Kui klassis kirjeldatakse ära **ükskõik milline** konstruktor, siis vaike-konstruktorit enam ei ole
  - vahet pole, kas kirjeldatud konstruktor on parameetritega või parameetriteta
 - Tuleb ettevaatlik olla, kui koodis on kasutatud vaike-konstruktorit, siis uue konstruktori kirjeldamisel osa koodist ei pruugi töötada
@@ -87,13 +87,13 @@ public class Student {
     public Student(String name) {
         // ...
     }
-    
     public static void main(String[] args) {
         Student s = new Student();
     }
 }
 ```
-@[7](Kui eelnevalt tühi konstruktor oli olemas (vaike-konstruktor), siis ühe konstruktori kirjeldamisel seda enam ei ole)
+@[7](Kui eelnevalt tühi konstruktor oli olemas (vaike-konstruktor),)
+@[7](siis ühe konstruktori kirjeldamisel seda enam ei ole)
 @[](Selline kood ei tööta)
 @[](Üks võimalus on alati lisada ka parameetriteta konstruktor)
 
