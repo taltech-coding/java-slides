@@ -6,7 +6,7 @@ Baasklass `Object`
 
 Ago Luberg
 
-----
+---
 
 ## Baasklass (``Object``)
 
@@ -24,7 +24,7 @@ Ago Luberg
 
 ---
 
-## Objekti kasutamine sõnena (``toString()``)
+## Objekt sõnena (``toString()``)
 
 - Objekti sisu presenteerimine sõnena
 - Näiteks kui objekti välja printida, kasutatakse seda meetodit:
@@ -58,14 +58,13 @@ Ago Luberg
             this.age = age;
         }
     }
+    
+    public void example() {
+        Student s = new Student("Juurikas", 19);
+        System.out.println(s);  // Student@1c53fd30
+    }
 ```
-
-- Vaikimisi toimib nii:
-
-```java
-    Student s = new Student("Juurikas", 19);
-    System.out.println(s);  // Student@1c53fd30
-```
+@[12](Vaikimisi kuvatakse näiteks `Student@1c53fd30`)
 
 ---
 
@@ -85,21 +84,19 @@ Ago Luberg
             return String.format("%s (%d a)", name, age);
         }
     }
+    
+    public void example() {
+        Student s = new Student("Juurikas", 19);
+        System.out.println(s);  // Juurikas (19 a)
+    }
 ```
-
-- See toimib nii:
-
-```java
-    Student s = new Student("Juurikas", 19);
-    System.out.println(s);
-    // Juurikas (19 a)
-```
+@[17](Kui `toString()` on üle kirjutatud, saab kuvada sobivat sõne)
 
 ---
 
 ## Objektide võrdlemine
 
-@ul
+@ul[ul-90]
 - Objekte võrreldakse ``equals()`` meetodiga: ``x.equals(y)``
 - Iga klass kirjeldab ise ära, millisel juhul objektid võrdsed on
 - Vakimisi lahendus ``Object`` klassis tagastab ``true`` kui objektid on samad (viitavad samale objektile) ``x == y``
@@ -111,7 +108,7 @@ Ago Luberg
 
 ## hashCode() meetod
 
-@ul
+@ul[ul-90]
 - Tagastab objekti räsikoodi (*hash code*)
 - Kasutatakse näiteks ``HashMap`` objekti poolt
 - Kui objektid on võrdsed (``x.equals(y)``), peavad nad tagastama sama koodi (``x.hashCode() == y.hashCode()``)
