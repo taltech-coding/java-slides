@@ -74,11 +74,13 @@ public class Main {
 
 ---
 
-## Vaike-konstruktor (*default constructor*)
+## Vaike-konstruktor
 
+@ul[ul-70](false)
 - Kui klassis kirjeldatakse ära **ükskõik milline** konstruktor, siis vaike-konstruktorit enam ei ole
  - vahet pole, kas kirjeldatud konstruktor on parameetritega või parameetriteta
 - Tuleb ettevaatlik olla, kui koodis on kasutatud vaike-konstruktorit, siis uue konstruktori kirjeldamisel osa koodist ei pruugi töötada
+@ulend
 
 ```java
 public class Student {
@@ -174,8 +176,10 @@ public class Student {
 
 ## Konstruktori näide 4
 
+@ul[ul-70]
 - ``Car`` konstruktor kutsub välja ilma parameetriteta ``Vehicle`` konstruktori
 - Kuna ``Vehicle`` klass kirjeldab ära parameetriga (``doors``) konstruktori, siis koodi toimimiseks peame kirjeldama lisaks ka parameetriteta konstruktori:
+@ulend
 
 ```java
     public class Vehicle {
@@ -208,14 +212,16 @@ public class Student {
     }
 ```
 
-- @[css](Kood ei kompileeru!)
+- @css[red](Kood ei kompileeru!)
 
 ---
 
 ## Konstruktori näide 6
 
+@ul[ul-70]
 - Lisame ``RaceCar`` klassi ka konstruktori, mis kutsub oma ülemklassi konstruktorit välja
 - Kuna ``Car`` klassis parameetriteta konstruktorit pole, kasutame ainsat ``doors`` parameetriga konstruktorit:
+@ulend
 
 ```java
     public class Vehicle {
