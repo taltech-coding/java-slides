@@ -111,7 +111,7 @@ Ago Luberg
  - *Singleton* disainimustri puhul luuakse üks instants klassist ja
    seda hoitakse staatilises muutujas.
 
-- ``out`` muutuja ``System`` klassis on staatiline `System.out.println();`
+- ``out`` muutuja ``System`` klassis on staatiline: `System.out.println();`
 
 ---
 
@@ -129,8 +129,7 @@ Ago Luberg
 
 ## *Static factory* meetod
 
-@ul
-
+@ul[ul-90]
 - Staatiline meetod, mille sisu on uue objekti loomine
 - Annab võimaluse teha täiendavat kontrolli enne objekti loomist
 - Konstruktor saab tagastada vaid ühte andmetüüpi objekti
