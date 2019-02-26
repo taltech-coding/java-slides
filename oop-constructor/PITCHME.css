@@ -1,0 +1,72 @@
+.reveal .red {
+    color: #ff0000;
+}
+
+.reveal ul.ulw100 {
+    width: 100%;
+}
+
+.reveal ul.ulw80 {
+    width: 80%;
+}
+
+.reveal ul.ul-100 li {
+   font-size: 1.0em;
+}
+
+.reveal ul.ul-90 li {
+   font-size: 0.9em;
+}
+
+.reveal ul.ul-80 li {
+   font-size: 0.8em;
+}
+
+.reveal ul.ul-70 li {
+   font-size: 0.7em;
+}
+
+.reveal ul.ul-60 li {
+   font-size: 0.6em;
+}
+
+.reveal ul.ul-50 li {
+   font-size: 0.5em;
+}
+
+.reveal code:not([class]) {
+    background-color: #fbe5e1;
+    color: #c0341d;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+
+/* special stuff */
+
+.reveal section .image-string-example {
+    background-color: #ffffff;
+    right: -200px;
+    top: 62%;
+}
+
+.reveal section .image-string-example img {
+    border: 0;
+}
+.special {
+
+}
+
+.reveal section .special + pre {
+    left: -20%;
+}
+.reveal section .image-single-inheritance {
+    right: -22%;
+    z-index: -1000;
+}
+.reveal section .image-single-inheritance img {
+    border: 0;
+}
+
+img {
+    border: 0 !important;
+}
