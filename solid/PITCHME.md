@@ -74,6 +74,9 @@ public class Employee {
 - Klassid tuleb struktureerida selliselt, et neid saab uue funktsionaalsuse vajadusel mugavalt laiendada (*open for extensions*). 
 - Samas seda osa koodist, mis on juba kirjutatud, ei tohiks kunagi muuta (välja arvatud vigade parandamiseks) (*closed for modifications*).
 
+---
+
+## The Open/Closed Principle
 
 ```java
 public class Canvas {
@@ -99,6 +102,10 @@ public class Canvas {
 - Lisame liidesesse `Shape` meetodi `draw()`, mida iga liidest implementeeriv klass peab realiseerima
 - `Canvas` tuleb selle võrra lühem - edaspidi ei pea muid klasse muutma, ainult lisatav kujund tuleb realiseerida
 
+---
+
+## The Open/Closed Principle
+
 ```java
 public class Canvas {
     private List<Shape> shapes = new ArrayList<>();
@@ -119,6 +126,9 @@ public class Canvas {
 - Alamklassid tuleb kirjeldada nii, et objekti kasutaja jaoks ei ole vahet, kui kasutusse antakse alamklassi tüüpi objekt.
 - Kui alamklass teeb midagi sellist, mida ülemklassist ei eeldaks, siis see on selle printsiibi rikkumine.
 
+---
+
+## The Liskov Substitution Principle
 
 ```java
 public abstract class TransportationDevice {
@@ -155,6 +165,10 @@ public class Bicycle extends TransportationDevice {
 - Tekivad tühjad meetodid või olukorrad, kus meetodit ei saa üldse implementeerida
 - Lahendus on luua parem hierarhia
 - Jagame sõidukid mootoriga ja ilma mootorita sõidukiteks
+
+---
+
+## The Liskov Substitution Principle
 
 ```java
 public abstract class TransportationDevice {
@@ -197,6 +211,10 @@ public class Bicycle extends DeviceWithoutEngine {
 - Liidese kasutaja ei pea sõltuma meetoditest, mida otseselt vaja ei lähe. 
 - Liidesed, kus on palju meetodeid, jagatakse väiksemateks.
 
+---
+
+### The Interface-Segregation Principle
+
 ```java
 public interface Shape {
     double area();
@@ -220,7 +238,7 @@ public class Circle implements Shape {
 
 ---
 
-## The Interface-Segregation Principle
+### The Interface-Segregation Principle
 
 - Jagame liidese kaheks: kahemõõtmelised kujundid, kolmemõõtmelised kujundid
 
@@ -271,6 +289,10 @@ public class Cube implements Shape, SolidShape {
 - Tarkvarakomponendid peaksid sõltuma abstraktsioonidest, mitte konkreetsetest klassidest.
 - Komponentide implementatsiooni peab olema võimalik vahetada
 
+--- 
+
+### The Dependency-Inversion Principle
+
 ```java
 public class BackendDeveloper {
     public void writeJava() {
@@ -298,7 +320,7 @@ public class Project {
 
 ---
 
-## The Dependency-Inversion Principle
+### The Dependency-Inversion Principle
 
 - Loome üldisema (abstraktse) andmetüübi: arendaja
 - Annab meile võimaluse kasutada arendajate listi
