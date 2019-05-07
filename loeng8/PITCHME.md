@@ -213,4 +213,4 @@ Ago Luberg
 
 ## Vaba OOP
 
-![oop](loeng8/oop_oet_add_dog.png)
+![oop](loeng8/oop_pet_add_dog.png)
