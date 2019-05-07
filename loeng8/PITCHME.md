@@ -48,6 +48,7 @@ Ago Luberg
 
 ## Gomoku
 
+@ul[ul-80]
 - 16\. nädala praktikumis toimub võistlus
 - Võistlusel osalemine annab +5p (ilma võistluseta max 45p)
 - Peab võitma tugevamat vastast
@@ -55,6 +56,29 @@ Ago Luberg
 - Võistlusel osalemiseks tuleb regada hiljemalt 16. nädala teisipäeval
 - Saatke kood (üks java fail) meiliga: ago.luberg@taltech.ee
  - emaili pange võistkonna liikmete nimed ja uniid-d
+@ulends
+
+---
+
+## Projektide hindamine
+
+- Avalikustame hääletamise, kus iga tudeng saab valida 5 erinevat projekti (1. koht, 2. koht jne)
+- Selleks lisa `iti0202-2019-gui` projekti `info.md`, milles on:
+ - üks pilt mängust
+ - link jar-failile
+ - lühike tekst
+- Koostame nimekirja, kus kõik projektid on kättesaadavad
+- Loomulikult võid sõpradele reklaamida ise ka oma mängu
+
+---
+
+## Projektide hindamine
+
+- Parimad 5 projekti saavad boonuspunkte:
+ - 1\. koht 50p
+ - 5\. koht 10p
+- Eeldab, et projekti liikmed ise on ka hääletanud
+- Eeldab, et projekt on kaitstud (või saab kaitstud)
 
 ---
 
@@ -73,6 +97,8 @@ Ago Luberg
 ## Lisaks saab kaitsta
 
 - Muud ülesanded -50%
+- Giti tähtaeg kehtib
+- Võimalik kaitsta vanu ülesandeid
 
 ---
 
@@ -80,25 +106,28 @@ Ago Luberg
 
 - Võimalus saada eksamieeldus kätte
 - Projektihalduse eest maksimaalselt 30p
- - Eeldab, et gitlabis on issued ja commitid näha mõistlikult + kaitsmisel ettekanne projektihaldusest
-- Projekti eest (kui pole eelnevalt näidanud) maksimaalselt 30p
+ - Eeldab, et gitlabis on *issue*'d ja *commit*'id näha mõistlikult + kaitsmisel ettekanne projektihaldusest
+- Projekti sisu (kood jms) eest (kui pole eelnevalt näidanud) maksimaalselt 30p
 
 ---
 
 ## Järeljärelkontrolltöö
 
-- 20\. mai kell 10:00 - 12:00
+- 20\. mai kell 10:00 ICT-122
+- Registreerumine ained.ttu.ee lehel (Järeljärelkontrolltööle registreerumine)
 
 ---
 
 ## Punktiseis
 
+@ul
 - Võimalik veel teenida:
  - 52.5p 4 x EX, 
  - 60p projekt, 
  - 45p Gomoku
  - 20p KT
 - **Kokku: 177.5p**
+@ulend
 
 ---
 
@@ -116,7 +145,7 @@ Ago Luberg
 
 ## Abiõppejõud
 
-- Sügisel uus kursus: programmeerimise täiendusõpe (3 EAP)
+- Sügisel uus kursus: programmeerimise täiendusõpe
 - Suvel: 
  - täiendame pydoci
  - mõtleme täiendusõppe korralduse
@@ -132,5 +161,56 @@ Ago Luberg
 
 ## Gomoku
 
+@ul
 - vt minimaxi videost
 - vaata igast positsioonist igas suunas tekkivad nuppude järjestused
+- loe kokku, mitu nuppu järjest on
+- anna erinevad punktid vastavalt kogusele
+ - nt enda "lahtine 4" (== võit) - 100 000 punkti
+ - "poollahtine 4" - 10 000 punkti
+ - enda "lahtine 3" - 1000 punkti
+@ulend
+
+---
+
+## Gomoku
+
+@ul
+- Optimeeri
+ - alpha-beta minimaxi asemel
+ - milliseid ruute tasub läbi käia?
+ - millistes suundades on vaja vaadata?
+- Lisa ajapiirang 1 sekund
+@ulend
+
+---
+
+## Vaba OOP
+
+- Mõned näited KT1, KT2 koodidest
+
+![oop](loeng8/oop_private_fields.png)
+
+---
+
+## Vaba OOP
+
+![oop](loeng8/oop_type_string.png)
+
+---
+
+## Vaba OOP
+
+![oop](loeng8/oop_constructor.png)
+
+---
+
+## Vaba OOP
+
+![oop](loeng8/oop_optional.png)
+
+---
+
+## Vaba OOP
+
+![oop](loeng8/oop_oet_add_dog.png)
